@@ -1,0 +1,1110 @@
+    1  cd/media/$USER/VBox_GAs_7.2.14
+    2  1s
+    3  ls
+    4  ls/media/$USER
+    5  ls/mnt
+    6  ls /media/$USER
+    7  ls /mnt
+    8  cd /media/$USER/VBox_GAs_7.2.14
+    9  sudo ./VBoxLinuxAdditions.run
+   10  sudo apt update
+   11  sudo apt install build-essential dkms linux-headers-$(uname -r)
+   12  sudo ./VBoxLinuxAdditions.run
+   13  sudo reboot
+   14  sudo apt update
+   15  sudo apt install build-essential dkms linux-headers-$(uname -r)
+   16  cd /media/$USER/VBox_GAs_*
+   17  sudo ./VBoxLinuxAdditions.run
+   18  conda deactivate
+   19  pwd
+   20  ls
+   21  pwd
+   22  ls
+   23  LS
+   24  Ls
+   25  ls
+   26  pwd
+   27  ls
+   28  pwd
+   29  ls
+   30  mkdir NewWork
+   31  cd
+   32  cd NewWork
+   33  ls NewWork
+   34  cdNewWork
+   35  cd NewWork
+   36  ls
+   37  cd Desktop
+   38  mkdir work
+   39  ls work
+   40  cd work
+   41  touch me
+   42  ls
+   43  rm me
+   44  ls
+   45  cd
+   46  cd..
+   47  cd Desktop
+   48  ls
+   49  cd work
+   50  ls
+   51  cd ..
+   52  rm work
+   53  curl -L https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+   54  sudo snap install curl
+   55  curl -L https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+   56  curl -L -o sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+   57  sudo apt install curl
+   58  curl --version
+   59  which curl
+   60  ls
+   61  wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.2.0/sratoolkit.3.2.0-ubuntu64.tar.gz
+   62  ls
+   63  pwd
+   64  which curl
+   65  curl --version
+   66  ls
+   67  ls -lh sratoolkit.tar.gz
+   68  tar -xzvf sratoolkit.tar.gz
+   69  prefetch SRR11528307
+   70  sudo apt intall sra-toolkit
+   71  sudo apt install sra-toolkit
+   72  prefetch SRR11528307
+   73  fastq-dump --split-files SRR11528307
+   74  head -n8 SRR11528307
+   75  head -n8 SRR11528307.fastq
+   76  head -n8 SRR11528307_1.fastq
+   77  ls
+   78  pwd
+   79  jellyfish --version
+   80  cat /etc/os-release
+   81  pwd
+   82  ls -lh
+   83  jellyfish --help | head
+   84  ps aux | grep -E 'apt|
+   85  dpkg|unattended'
+   86  ps aux | grep unattended
+   87  ps -p 2216 -o pid,etime,%cpu,%mem,cmd
+   88  sudo dpkg --configure -a
+   89  sudo apt update
+   90  pwd
+   91  ls -lh
+   92  sudo apt install sra-toolkit fastqc samtools
+   93  fastqc --version
+   94  samtools --version
+   95  fastq-dump --version
+   96  ls -lh ~/Desktop
+   97  ls -lh ~/Downloads
+   98  cd ~/Desktop fastqc SRR11528307_1.fastq SRR11528307_2.fastq
+   99  cd ~/Desktop
+  100  fastqc SRR11528307_1.fastq SRR11528307_2.fastq
+  101  ls -lh *_fastqc*
+  102  firefox SRR11528307_1_fastqc.html
+  103  firefox SRR11528307_2_fastqc.html
+  104  firefox SRR11528307_1_fastqc.html
+  105  firefox SRR11528307_2_fastqc.html
+  106  sudo apt update
+  107  sudo apt install samtools bwa bcftools
+  108  ps -p 9007 -o pid,cmd
+  109  ps -p 9007 -o pid,etimr,cmd
+  110  ps -p 9007 -o pid,etime,cmd
+  111  sudo kill 9007
+  112  ps -p 9007
+  113  sudo kill 9007
+  114  ps -p 9007
+  115  sudo kill -9 9007
+  116  ps -p 9007
+  117  sudo apt install samtools bwa bcftools
+  118  bwa
+  119  samtools --version
+  120  bcftools --version
+  121  cd ~/Desktop
+  122  ls -lh
+  123  cd ~/Desktop/work
+  124  wget -0 TP53.fa"https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NM_000546.6&db=nuccore&report=fasta"
+  125  wget -O TP53.fa"https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NM_000546.6&db=nuccore&report=fasta"
+  126  wget -O TP53.fa "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NM_000546.6&db=nuccore&report=fasta"
+  127  ls -lh TP53.fa
+  128  bwa index TP53.fa
+  129  ls -lh TP53.fa*
+  130  ls -lh ~/Desktop/SRR11528307_*.fastq
+  131  bwa mem TP53.fa ~/Desktop/SRR11528307_1.fastq ~/Desktop/SRR11528307_2.fastq > TP53.sam
+  132  ls -lh TP53.sam
+  133  samtools view -bs TP53.sam>
+  134  samtools view -bs TP53.sam >TP53.bam
+  135  samtools view -bS TP53.sam > TP53.bam
+  136  samtools view -b TP53.sam > TP53.bam
+  137  ls -lh TP53.bam
+  138  samtools sort -o TP53.sorted.bam TP53.bam
+  139  samtools index TP53.sorted.bam
+  140  samtools flagstat TP53.sorted.bam
+  141  head TP53.fa
+  142  samtools view -c -F 4 TP53.sorted.bam
+  143  head -n 8 ~/Desktop/SRR11528307_1.fastq
+  144  fastqc ~/Desktop/SRR11528307_1.fastq ~/Desktop/SRR11528307_2.fastq
+  145  ls -lh *_fastqc.html
+  146  ls -lh ~/Desktop/*_fastqc.html
+  147  firefox ~/Desktop/SRR11528307_1_fastqc.html
+  148  firefox ~/Desktop/SRR11528307_2_fastqc.html
+  149  which trimmomatic
+  150  sudo apt update && sudo apt install trimmomatic
+  151  ping -c 4 google.com
+  152  sudo apt update && sudo apt install trimmomatic
+  153  whih trimmomatic
+  154  which trimmomatic
+  155  dpkg -L trimmomatic | grep -E ''jar|bin'
+  156  dpkg -L trimmomatic | grep -E 'jar|bin'
+  157  TrimmomaticPE
+  158  cd ~/Desktop/work
+  159  ls -lh
+  160  find ~/Desktop -name "SRR11528307_*.fastq" -o -name "SRR11528307_*.fq"
+  161  TrimmomaticPE -threads 2
+  162  TrimmomaticPE -thread 2 \~/Desktop/SRR11528307_1.fastq \ ~/Desktop/SRR11528307_2.fastq \ SRR11528307_1_paired.fastq \ SRR11528307_1_unpaired.fastq \ SRR11528307_2_paired.fastq \ SRR11528307_2_unpaired.fastq \ SLIDINGWINDOW:4:20 MINLEN:36
+  163  ls -lh
+  164  TrimmomaticPE -threads 2 \ ~/Desktop/SRR11528307_1.fastq \ ~/Desktop/SRR11528307_2.fastq \ SRR11528307_1_paired.fastq \ SRR11528307_1_unpaired.fastq \ SRR11528307_2_paired.fastq \ SRR11528307_2_unpaired.fastq \ SLIDINGWINDOW:4:20 MINLEN:36
+  165  ls -lh
+  166  TrimmomaticPE -threads 2 \ ~/Desktop/SRR11528307_1.fastq \ ~/Desktop/SRR11528307_2.fastq \ SRR11528307_1_paired.fastq \ SRR11528307_1_unpaired.fastq \ SRR11528307_2_paired.fastq \ SRR11528307_2_unpaired.fastq \ MINLEN:36
+  167  TrimmomaticPE --version
+  168  dpkg -s trimmomatic | grep version
+  169  java -jar /usr/share/java/trimmomatic-0.39.jar PE -threads 2 \ ~/Desktop/SRR11528307_1.fastq \ ~/Desktop/SRR11528307_2.fastq \ SRR11528307_1_paired.fastq \ SRR11528307_1_unpaired.fastq \ SRR11528307_2_paired.fastq \ SRR11528307_2_unpaired.fastq \ MINLEN:36
+  170  java -jar /usr/share/java/trimmomatic-0.39.jar PE -threads 2 \ ~/Desktop/SRR11528307_1.fastq \ ~/Desktop/SRR11528307_2.fastq \ SRR11528307_1_paired.fastq \ SRR11528307_1_unpaired.fastq \ SRR11528307_2_paired.fastq \ SRR11528307_2_unpaired.fastq \ SLIDINGWINDOW:4:20
+  171  java -jar /usr/share/java/trimmomatic-0.39.jar PE -threads 2 ~/Desktop/SRR11528307_1.fastq ~/Desktop/SRR11528307_2.fastq SRR11528307_1_paired.fastq SRR11528307_1_unpaired.fastq SRR11528307_2_paired.fastq SRR11528307_2_unpaired.fastq SLIDINGWINDOW:4:20
+  172  ls -lh SRR11528307_1_paired.fastq SRR11528307_1_unpaired.fastq SRR11528307_2_paired.fastq SRR11528307_2_unpaired.fastq
+  173  ls -lh TP53.fa*
+  174  bwa
+  175  bwa index TP53.fa
+  176  bwa mem -t 2 TP53.fa SRR11528307_1_paired.fastq SRR11528307_2_paired.fastq > TP53.sam
+  177  ls -lh TP53.sam
+  178  samtools view -bS TP53.sam > TP53.bam
+  179  ls -lh TP53.bam
+  180  samtools sort -o TP53.sorted.bam
+  181  ls -lh TP53.sorted.bam
+  182  samtools index TP53.sorted.bam
+  183  ls -lh TP53.sorted.bam.bai
+  184  samtools quickcheck -v TP53.sorted.bam
+  185  samtools flagstat TP53.sorted.bam
+  186  grep "^>" TP53.fa
+  187  head -4 TP53.fa
+  188  samtools view -H TP53.sorted.bam | grep "^@SQ"
+  189  head -4 SRR11528307_1_paired.fastq
+  190  head -4 SRR11528307_2_paired.fastq
+  191  awk 'NR%4==2{print length($0);exit}' SRR11528307_1_paired.fastq
+  192  grep -A1 "^@SRR11528307.1" SRR11528307_1_paired.fastq | head -2
+  193  bwa mem -t 2 TP53.fa SRR11528307_1_paired.fastq 2>/ dev/null | samtools view -F 4 -c
+  194  bwa mem -t 2 TP53.fa SRR11528307_1_paired.fastq 2>/dev/null | samtools view -F 4 -c
+  195  fastq-dump --info SRR11528307
+  196  sra-stat -x SRR11528307
+  197  bwa mem -t 2 TP53.fa SRR11528307_1_paired.fastq 2>/dev/null | samtools view -c
+  198  ls
+  199  pwd
+  200  ls
+  201  mkdir TP53_project
+  202  cd TP53_project
+  203  pws
+  204  pwd
+  205  ls
+  206  wget -O TP53.fa "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000546.6&rettype=fasta&retmode=text"
+  207  ls -lh TP53.fa
+  208  head -4 TP53.fa
+  209  grep -v "^>" TP53.fa | tr -d '\n' | wc -c
+  210  grep -v "^>" TP53.fa | tr -d '\n' | fold -w 60 | head
+  211  fastq-dump --version
+  212  cat TP53.fa
+  213  grep -v "^>" TP53.fa | tr -d '\n' | wc -c
+  214  grep -v "^>" TP53.fa | tr -d '\n' | fold -w 1 | sort | uniq -c
+  215  seq=$(grep -v "^>" TP53.fa | tr -d '\n')
+  216  echo "scale=2; (($(echo "$seq" | tr -cd 'G' | wc -c)+$(echo "$seq" | tr -cd 'C' | wc -c))*100)/${#seq}" | bc
+  217  grep -v "^>" TP53.fa | tr -d '\n' | grep -bo "ATG" | head
+  218  seq=$(grep -v "^>" TP53.fa | tr -d '\n')
+  219  start=142
+  220  for ((i=start;i<${#seq}-2;i+=3)); do     codon=${seq:i:3};     if [[ "$codon" == "TAA" || "$codon" == "TAG" || "$codon" == "TGA" ]]; then         echo "Start position: $((start+1))";         echo "Stop codon: $codon";         echo "Stop position: $((i+1))";         echo "Coding sequence length: $((i-start+3)) nt";         break;     fi; done
+  221  seq=$(grep -v "^>" TP53.fa | tr -d '\n')
+  222  echo ">TP53_CDS_NM_000546.6" > TP53_CDS.fa
+  223  echo "${seq:142:1182}" >> TP53_CDS.fa
+  224  grep -v "^>" TP53_CDS.fa | tr -d '\n' | wc -c
+  225  transeq -version
+  226  sudo apt install emboss
+  227  transeq -version
+  228  transeq -sequence TP53_CDS.fa -outseq TP53_protein.fa
+  229  cat TP53_protein.fa
+  230  grep -v "^>" TP53_protein.fa | tr -d '\n' | WC -C
+  231  <pre>grep -v &quot;^&gt;&quot; TP53_protein.fa | tr -d &apos;\n&apos; | wc -c
+  232  grep -v "^>" TP53_protein.fa | tr -d '\n' | wc -c
+  233  grep -v "^>" TP53_protein.fa | tr -d '\n' | fold -w 1 | sort | uniq -c
+  234  pepstats -sequence TP53_protein.fa -outfile TP53_pepstats.txt
+  235  grep -i "molecular" TP53_pepstats.txt
+  236  grep -i "isoelectric" TP53_pepstats.txt
+  237  grep -E "Asp|Flu|Lys|Arg|His" TP53_pepstats.txt
+  238  grep -E "Ala|Val|Ile|Leu|Met|Phe|Trp|Tyr" TP53_pepstats.txt
+  239  grep -i :instability" TP53_pepstats.txt
+  240  grep -i "instability" TP53_pepstats.txt
+  241  grep -i "index" TP53_pepstats.txt
+  242  grep -i "index"TP53_pepstats.txt
+  243  python3 -c "from Bio.SeqUtils.ProtParam import ProteinAnalysis; print('Biopython OK')"
+  244  python3 -c "from Bio.SeqUtils.ProtParam import ProteinAnalysis; print('BiopythonOK')"
+  245  python3 --version
+  246  pip3 install biopython
+  247  sudo apt install python-pip
+  248  python -c "from Bio.SeqUtils.ProtParam import ProteinAnalysis; print('BiopythonOK')"
+  249  python3 -c "from Bio.SeqUtils.Prot.Param import ProteinAnalysis; print('Biopython OK')"
+  250  sudo apt install python-pip python3-venv
+  251  python3 -m pip --version
+  252  which pip3
+  253  pip3 --verson
+  254  pip3 --version
+  255  sudo apt install python3-pip
+  256  python3 -m pip --version
+  257  python3 -m venv tp53_env
+  258  source tp53_env/bin/activate
+  259  python -m pip install biopython
+  260  python3 -c "from Bio.SeqUtils.ProtParam import ProteinAnalysis; print('Biopython OK')"
+  261  which pip3
+  262  pip3 --version
+  263  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein.fa','fasta').seq); a=ProteinAnalysis(s); print('Instability Index =', a.instability_index())"
+  264  sed 's/\*//g' TP53_protein.fa > TP53_protein_clean.fa
+  265  grep -v '^>' TP53_protein_clean.fa | tr -d '\n' | wc -c
+  266  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('Residues =', len(s)); print('Instability Index =', ProteinAnalysis(s).instability_index())"
+  267  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Aromaticity =', a.aromaticity())"
+  268  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('GRAVY =', ProteinAnalysis(s).gravy())"
+  269  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); h,t,sheet=ProteinAnalysis(s).secondary_structure_fraction(); print('Helix fraction =', h); print('Turn fraction =', t); print('Sheet fraction =', sheet)"
+  270  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Length:', len(s)); print('Molecular weight:', round(a.molecular_weight(),2)); print('pI:', round(a.isoelectric_point(),4)); print('Instability index:', round(a.instability_index(),3)); print('Aromaticity:', round(a.aromaticity(),4)); print('GRAVY:', round(a.gravy(),4)); print('Helix propensity:', round(a.secondary_structure_fraction()[0],4)); print('Turn propensity:', round(a.secondary_structure_fraction()[1],4)); print('Sheet propensity:', round(a.secondary_structure_fraction()[2],4))"
+  271  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Amino acid composition:'); print(a.count_amino_acids())"
+  272  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print(a.count_amino_acids())"
+  273  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Aliphatic index:', round(a.aliphatic_index(),4))"
+  274  python3 -c "A=24; V=18; I=8; L=32; n=393; ai=(A+2.9*V+3.9*(I+L))/n*100; print('Aliphatic Index:', round(ai,4))"
+  275  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Molar extinction coefficient:', a.molar_extinction_coefficient())"
+  276  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Amino acid percentages:'); print({k: round(v,2) for k,v in a.get_amino_acids_percent().items()})"
+  277  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Amino acid percentage:'); print({k: round(v,2) for k,v in a.amino_acids_percent.items()})"
+  278  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); groups={'Hydrophobic':'AILMFWVY','Polar':'STNQCG','Positive':'KRH','Negative':'DE'}; print({k: round(sum(s.count(x) for x in v)/len(s)*100,2) for k,v in groups.items()})"
+  279  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('Charge at pH 5.0:', round(a.charge_at_pH(5.0),4)); print('Charge at pH 7.0:', round(a.charge_at_pH(7.0),4)); print('Charge at pH 7.4:', round(a.charge_at_pH(7.4),4)); print('Charge at pH 9.0:', round(a.charge_at_pH(9.0),4))"
+  280  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); positive=sum(s.count(x) for x in 'KRH'); negative=sum(s.count(x) for x in 'DE'); print('Positive residues (K,R,H):',positive); print('Negative residues (D,E):',negative); print('Positive percentage:',round(positive/len(s)*100,2)); print('Negative percentage:',round(negative/len(s)*100,2)); print('Positive - Negative:',positive-negative)"
+  281  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); f=a.flexibility(); print('Flexibility values:',len(f)); print('Minimum:',round(min(f),4)); print('Maximum:',round(max(f),4)); print('Average:',round(sum(f)/len(f),4)); print('First 10:',[round(x,4) for x in f[:10]])"
+  282  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; from Bio.SeqUtils.ProtParamData import kd; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); h=a.protein_scale(kd,9,1.0); print('Hydropathy values:',len(h)); print('Minimum:',round(min(h),4)); print('Maximum:',round(max(h),4)); print('Average:',round(sum(h)/len(h),4)); print('First 10:',[round(x,4) for x in h[:10]])"
+  283  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; from Bio.SeqUtils.ProtParamData import kd; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); h=a.protein_scale(kd,9,1.0); top=sorted(enumerate(h),key=lambda x:x[1],reverse=True)[:10]; print('Top 10 hydrophobic windows:'); [print('Window',i+1,'-',i+9,'Score:',round(v,4),'Sequence:',s[i:i+9]) for i,v in top]"
+  284  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; from Bio.SeqUtils.ProtParamData import kd; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); h=a.protein_scale(kd,9,1.0); top=sorted(enumerate(h),key=lambda x:x[1])[:10]; print('Top 10 hydrophilic windows:'); [print('Window',i+1,'-',i+9,'Score:',round(v,4),'Sequence:',s[i:i+9]) for i,v in top]"
+  285  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; from Bio.SeqUtils.ProtParamData import kd; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); h=a.protein_scale(kd,19,1.0); top=sorted(enumerate(h),key=lambda x:x[1],reverse=True)[:10]; print('Top 10 19-residue hydrophobic regions:'); [print('Region',i+1,'-',i+19,'Score:',round(v,4),'Sequence:',s[i:i+19]) for i,v in top]"
+  286  [200~python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('pH\tNet charge'); [print(f'{pH:.1f}\t{a.charge_at_pH(pH):.4f}') for pH in [2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]]"~
+  287  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('pH\tNet charge'); [print(f'{pH:.1f}\t{a.charge_at_pH(pH):.4f}') for pH in [2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]]"
+  288  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); a=ProteinAnalysis(s); print('pH\tNet charge'); [print(f'{pH/10:.1f}\t{a.charge_at_pH(pH/10):.4f}') for pH in range(55,71)]"
+  289  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); groups={'Hydrophobic':'AILMFWV','Polar':'STNQ','Positive':'KRH','Negative':'DE','Aromatic':'FYW','Aliphatic':'AILV','Sulfur':'CM'}; print('Amino acid property groups:'); [print(k,':',round(sum(s.count(x) for x in v)/len(s)*100,2),'%') for k,v in groups.items()]"
+  290  python3 -c "from Bio import SeqIO; from collections import Counter; from math import log2; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); n=len(s); H=-sum((v/n)*log2(v/n) for v in c.values()); print('Sequence length:',n); print('Unique amino acids:',len(c)); print('Shannon entropy:',round(H,4),'bits'); print('Maximum possible entropy:',round(log2(20),4),'bits'); print('Relative entropy:',round(H/log2(20)*100,2),'%')"
+  291  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); print('Amino acid frequency ranking:'); [print(f'{aa}: {count} ({count/len(s)*100:.2f}%)') for aa,count in c.most_common()]"
+  292  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('Residue positional ranges:'); [print(f'{aa}: first={s.index(aa)+1}, last={s.rindex(aa)+1}, count={s.count(aa)}') for aa in 'ACDEFGHIKLMNPQRSTVWY']"
+  293  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('Homopolymer runs (4+ identical residues):'); [print(f'{m.group()} : positions {m.start()+1}-{m.end()}') for m in re.finditer(r'(.)\\1{3,}',s)]"
+  294  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s[i:i+2] for i in range(len(s)-1)); print('Top 20 dipeptides:'); [print(f'{x}: {n}') for x,n in c.most_common(20)]"
+  295  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s[i:i+3] for i in range(len(s)-2)); print('Top 20 tripeptides:'); [print(f'{x}: {n}') for x,n in c.most_common(20)]"
+  296  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); motifs={'PXXP':r'P..P','N-glycosylation':r'N[^P][ST]','Cys/His cluster':r'[CH]{2,}'}; print('Motif analysis:'); [(print(k,':',[(m.start()+1,m.group()) for m in re.finditer(v,s)])) for k,v in motifs.items()]"
+  297  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); w=20; print('Top 10 compositionally biased windows:'); x=[]; [(x.append((sum(v for k,v in Counter(s[i:i+w]).items() if v>=5),i+1,s[i:i+w],Counter(s[i:i+w]).most_common(3)))) for i in range(len(s)-w+1)]; [print('Window',i,'-',i+w-1,'Score:',score,'Sequence:',seq,'Top residues:',top) for score,i,seq,top in sorted(x,reverse=True)[:10]]"
+  298  python3 -c "from Bio import SeqIO; from collections import Counter; from math import log2; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); w=20; x=[]; [(x.append((-(sum((c/w)*log2(c/w) for c in Counter(s[i:i+w]).values())),i+1,s[i:i+w]))) for i in range(len(s)-w+1)]; print('Lowest-complexity windows:'); [print('Window',i,'-',i+w-1,'Entropy:',round(h,4),'Sequence:',seq) for h,i,seq in sorted(x)[:10]]; print('Highest-complexity windows:'); [print('Window',i,'-',i+w-1,'Entropy:',round(h,4),'Sequence:',seq) for h,i,seq in sorted(x,reverse=True)[:10]]"
+  299  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); patterns={'Ser-Pro (SP) phosphorylation motif':r'SP','Thr-Pro (TP) phosphorylation motif':r'TP'}; print('Potential phosphorylation motifs:'); [(print(k,':',[(m.start()+1,m.group()) for m in re.finditer(v,s)])) for k,v in patterns.items()]"
+  300  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); sites=[i+1 for i in range(len(s)-1) if s[i] in 'KR' and s[i+1] != 'P']; print('Trypsin cleavage sites:',len(sites)); print('Positions:',sites)"
+  301  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); sites=[i+1 for i in range(len(s)-1) if s[i] in 'KR' and s[i+1] != 'P']; cuts=[0]+sites+[len(s)]; fragments=[s[cuts[i]:cuts[i+1]] for i in range(len(cuts)-1)]; print('Total theoretical fragments:',len(fragments)); print('First 20 fragments:'); [print(i+1,'Length:',len(f),'Sequence:',f) for i,f in enumerate(fragments[:20])]"
+  302  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); sites=[i+1 for i in range(len(s)-1) if s[i] in 'KR' and s[i+1] != 'P']; cuts=[0]+sites+[len(s)]; fragments=[s[cuts[i]:cuts[i+1]] for i in range(len(cuts)-1)]; lengths=[len(f) for f in fragments]; print('Total fragments:',len(fragments)); print('Minimum length:',min(lengths)); print('Maximum length:',max(lengths)); print('Average length:',round(sum(lengths)/len(lengths),2)); print('1-5 aa:',sum(1 for x in lengths if 1<=x<=5)); print('6-10 aa:',sum(1 for x in lengths if 6<=x<=10)); print('11-20 aa:',sum(1 for x in lengths if 11<=x<=20)); print('21-30 aa:',sum(1 for x in lengths if 21<=x<=30)); print('31+ aa:',sum(1 for x in lengths if x>=31))"
+  303  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); sites=[i+1 for i in range(len(s)-1) if s[i] in 'FWYL' and s[i+1] != 'P']; cuts=[0]+sites+[len(s)]; fragments=[s[cuts[i]:cuts[i+1]] for i in range(len(cuts)-1)]; lengths=[len(f) for f in fragments]; print('Chymotrypsin cleavage sites:',len(sites)); print('Total theoretical fragments:',len(fragments)); print('Minimum length:',min(lengths)); print('Maximum length:',max(lengths)); print('Average length:',round(sum(lengths)/len(lengths),2)); print('First 20 fragments:'); [print(i+1,'Length:',len(f),'Sequence:',f) for i,f in enumerate(fragments[:20])]"
+  304  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); sites=[i+1 for i in range(len(s)-1) if s[i] in 'FWYL' and s[i+1] != 'P']; cuts=[0]+sites+[len(s)]; fragments=[s[cuts[i]:cuts[i+1]] for i in range(len(cuts)-1)]; lengths=[len(f) for f in fragments]; print('Total fragments:',len(fragments)); print('Minimum length:',min(lengths)); print('Maximum length:',max(lengths)); print('Average length:',round(sum(lengths)/len(lengths),2)); print('1-5 aa:',sum(1 for x in lengths if 1<=x<=5)); print('6-10 aa:',sum(1 for x in lengths if 6<=x<=10)); print('11-20 aa:',sum(1 for x in lengths if 11<=x<=20)); print('21-30 aa:',sum(1 for x in lengths if 21<=x<=30)); print('31+ aa:',sum(1 for x in lengths if x>=31))"
+  305  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('N-terminal residue:',s[0]); print('C-terminal residue:',s[-1]); print('First 10 aa:',s[:10]); print('Last 10 aa:',s[-10:]); mid=len(s)//2; print('N-terminal half length:',mid); print('C-terminal half length:',len(s)-mid); print('N-terminal half:',s[:mid]); print('C-terminal half:',s[mid:])"
+  306  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); residues='KRHDE'; print('Residue positions:'); [(print(aa,':',[i+1 for i,x in enumerate(s) if x==aa])) for aa in residues]"
+  307  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s[i:i+2] for i in range(len(s)-1)); print('Top 15 dipeptides with positions:'); [(print(f'{x}: {n} occurrences | positions:',[i+1 for i in range(len(s)-1) if s[i:i+2]==x])) for x,n in c.most_common(15)]"
+  308  blastp -version
+  309  sudo apt update
+  310  sudo apt install ncbi-blast+
+  311  blastp -version
+  312  grep -n "^>" TP53_protein_clean.fa
+  313  head -5 TP53_protein_clean.fa
+  314  blastp -query TP53_protein_clean.fa -db nr -remote -out TP53_blast.txt -outfmt "6 qseqid sseqid pident length qcovs evalue bitscore stitle"
+  315  blastp -query TP53_protein_clean.fa -db nr -remote -max_target_seqs 5 -outfmt "6 qseqid sseqid pident evalue"
+  316  ping -c 3 www.ncbi.nlm.nih.gov
+  317  curl -I https://www.ncbi.nlm.nih.gov
+  318  blastp -query TP53_protein_clean.fa -db nr -remote -outfmt 6 -max_target_seqs 5
+  319  blastp -remote -query TP53_protein_clean.fa -db nr -outfmt "6 qseqid sseqid pident length evalue bitscore stitle" -max_target_seqs 5
+  320  blastp -query TP53_protein_clean.fa -db nr -remote -max_target_seqs 5 -outfmt "6 qseqid sseqid pident length evalue bitscore stitle"
+  321  history > ~/TP53_project/all_commands.txt
+  322  nano ~/TP53_project/terminal_results.txt
+  323  cd ~/TP53_project
+  324  source tp53_env/bin/activate
+  325  blastp -query TP53_protein_clean.fa -db swissprot -remote -max_target_seqs 5 -outfmt "6 qseqid sseqid pident length evalue bitscore stitle"
+  326  blastp -query TP53_protein_clean.fa -db swissprot -remote -max_target_seqs 5 -outfmt "6 qseqid sseqid pident length evalue bitscore stitle" > TP53_blast_swissprot.txt
+  327  cat TP53_blast_swissprot.txt
+  328  python3 -c "from Bio import SearchIO; r=SearchIO.read('TP53_blast_swissprot.txt','blast-tab'); print('BLAST hits:',len(r)); print('Query:',r.id); [(print(f'{i}. {h.id} | Identity: {h.hsps[0].ident_pct:.2f}% | Query coverage: {h.hsps[0].query_span/len(r.seq)*100:.2f}% | E-value: {h.hsps[0].evalue:.2e} | Bit score: {h.hsps[0].bitscore}')) for i,h in enumerate(r.hits[:5],1)]"
+  329  column -t TP53_blast_swissprot.txt
+  330  printf "BLASTP Swiss-Prot Results\n==========================\n" > TP53_blast_summary.txt
+  331  printf "Query: TP53_CDS_NM_000546.6_1\n\n" >> TP53_blast_summary.txt
+  332  column -t TP53_blast_swissprot.txt >> TP53_blast_summary.txt
+  333  cat TP53_blast_summary.txt
+  334  grep -E 'P53_HUMAN|P53_MACFA|P53_AETHIOPS|P53_TUPBE|P53_MARMOTA' TP53_blast_swissprot.txt
+  335  grep -E 'P53_HUMAN|P53_MACFA|P53_AETHIOPS|P53_TUPBE|P53_MARMOTA' TP53_blast_swissprot.txt > TP53_top5_hits.txt
+  336  cat TP53_top5_hits.txt
+  337  python3 -c "line=open('TP53_top5_hits.txt').readline().split(); print('Top BLAST hit:',line[1]); print('Identity:',line[2]+'%'); print('Alignment length:',line[3]); print('E-value:',line[4]); print('Bit score:',line[5])"
+  338  cat > TP53_blast_interpretation.txt <<'EOF'
+TP53 BLASTP INTERPRETATION
+==========================
+
+Top hit: P53_HUMAN
+Identity: 100.000%
+Alignment length: 393 aa
+E-value: 0.0
+Bit score: 813
+
+Interpretation:
+The query protein sequence shows a 100% identical match to the
+human TP53 protein sequence over the 393 amino-acid sequence.
+This strongly confirms that the analyzed sequence corresponds
+to human TP53.
+EOF
+
+  339  cat TP53_blast_interpretation.txt
+  340  blastdbcmd -db nr -entry P04637.4 -out TP53_human_blastseq.fa
+  341  head -5 TP53_human_blastseq.fa
+  342  rm TP53_human_blastseq.fa
+  343  blastp -query TP53_protein_clean.fa -db swissprot -remote -max_target_seqs 5 -outfmt "6 qseqid sseqid pident length evalue bitscore" > TP53_blast_clean.txt
+  344  cat TP53_blast_clean.txt
+  345  python3 -c "lines=open('TP53_blast_clean.txt').read().strip().splitlines(); print('Species/Hit\tIdentity\tDifference from human'); [(print(f'{x[1].split(\"|\")[-1]}\t{x[2]}%\t{100-float(x[2]):.3f}%')) for x in [l.split() for l in lines]]"
+  346  python3 -c "lines=open('TP53_blast_clean.txt').read().strip().splitlines(); f=open('TP53_conservation.txt','w'); f.write('TP53 CONSERVATION COMPARISON\n============================\n\n'); f.write('Species/Hit\tIdentity\tDifference from human\n'); [f.write(f'{x[1].split(chr(124))[-1]}\t{x[2]}%\t{100-float(x[2]):.3f}%\n') for x in [l.split() for l in lines]]; f.close()"
+  347  cat TP53_conservation.txt
+  348  cat > TP53_final_summary.txt <<'EOF'
+TP53 PROTEIN ANALYSIS – FINAL SUMMARY
+=====================================
+
+Protein:
+Human TP53 (tumor protein p53)
+
+Sequence length:
+393 amino acids
+
+BLAST identification:
+The analyzed TP53 protein sequence shows a 100% identical match to human TP53 (P04637.4).
+
+Top BLAST hits:
+1. P53_HUMAN   100.000% identity
+2. P53_MACFA    95.674% identity
+3. P53_AETHIOPS 95.674% identity
+4. P53_TUPBE    93.130% identity
+5. P53_MARMOTA  86.005% identity
+
+Conservation comparison:
+P53_HUMAN    100.000% identity
+P53_MACFA     95.674% identity
+P53_TUPBE     93.130% identity
+
+Interpretation:
+The analyzed sequence corresponds to human TP53. The high sequence
+identity observed in related species indicates strong evolutionary
+conservation of the TP53 protein.
+
+Other analyses performed:
+- Motif analysis
+- N-glycosylation motif identification
+- Cys/His cluster identification
+- Potential phosphorylation motif identification
+- Trypsin cleavage-site analysis
+- Chymotrypsin cleavage-site analysis
+- Fragment length analysis
+- N-terminal and C-terminal analysis
+- Residue-position analysis
+- Dipeptide frequency analysis
+- BLAST similarity analysis
+EOF
+
+  349  cat TP53_final_summary.txt
+  350  ls -lh
+  351  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); print('TP53 PROTEIN PHYSICOCHEMICAL PROPERTIES'); print('========================================'); print('Length:',len(s),'aa'); print('Molecular weight:',round(p.molecular_weight(),2),'Da'); print('Theoretical pI:',round(p.isoelectric_point(),2)); print('Instability index:',round(p.instability_index(),2)); print('Aromaticity:',round(p.aromaticity(),4)); print('GRAVY:',round(p.gravy(),4)); print('Aliphatic index:',round(sum(p.get_amino_acids_percent()[x]*100 for x in 'AVIL'),2))"
+  352  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); c=p.count_amino_acids(); aliphatic=100*(c['A']+2.9*c['V']+3.9*(c['I']+c['L']))/len(s); print('Aliphatic index:',round(aliphatic,2))"
+  353  cat > TP53_physicochemical.txt <<'EOF'
+TP53 PHYSICOCHEMICAL PROPERTIES
+================================
+
+Sequence length: 393 aa
+Molecular weight: 43652.71 Da
+Theoretical pI: 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562
+Aliphatic index: 59.08
+EOF
+
+  354  cat TP53_physicochemical.txt
+  355  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); print('TP53 AMINO ACID COMPOSITION'); print('==========================='); print('AA  Count  Percentage'); print('---------------------'); [(print(f'{aa}   {c[aa]:5d}   {c[aa]/len(s)*100:6.2f}%')) for aa in 'ACDEFGHIKLMNPQRSTVWY']; print('---------------------'); print('Total:',len(s))"
+  356  cat > TP53_amino_acid_composition.txt <<'EOF'
+TP53 AMINO ACID COMPOSITION
+===========================
+
+AA  Count  Percentage
+A   24     6.11%
+C   10     2.54%
+D   20     5.09%
+E   30     7.63%
+F   11     2.80%
+G   23     5.85%
+H   12     3.05%
+I    8     2.04%
+K   20     5.09%
+L   32     8.14%
+M   12     3.05%
+N   14     3.56%
+P   45    11.45%
+Q   15     3.82%
+R   26     6.62%
+S   38     9.67%
+T   22     5.60%
+V   18     4.58%
+W    4     1.02%
+Y    9     2.29%
+
+Total: 393
+EOF
+
+  357  cat TP53_amino_acid_composition.txt
+  358  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); pos=c['K']+c['R']; neg=c['D']+c['E']; print('TP53 CHARGED RESIDUE ANALYSIS'); print('============================='); print('Lysine (K):',c['K']); print('Arginine (R):',c['R']); print('Positive residues (K+R):',pos); print('Aspartate (D):',c['D']); print('Glutamate (E):',c['E']); print('Negative residues (D+E):',neg); print('Positive - Negative:',pos-neg); print('Positive percentage:',round(pos/len(s)*100,2)); print('Negative percentage:',round(neg/len(s)*100,2))"
+  359  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); print('TP53 HYDROPHOBICITY ANALYSIS'); print('='*30); print('GRAVY:',round(p.gravy(),4)); print('Interpretation: GRAVY > 0 indicates overall hydrophobic character; GRAVY < 0 indicates overall hydrophilic character.')"
+  360  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); print('TP53 AROMATICITY ANALYSIS'); print('='*30); print('Aromaticity:',round(p.aromaticity(),4)); print('Interpretation: Aromaticity represents the fraction of aromatic amino acids (F, W, Y) in the protein sequence.')"
+  361  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); print('TP53 ALIPHATIC INDEX ANALYSIS'); print('='*35); print('Aliphatic index:',round(p.aliphatic_index(),4))"
+  362  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); n=len(s); ai=(c['A']/n)*100 + 2.9*(c['V']/n)*100 + 3.9*((c['I']/n)*100+(c['L']/n)*100); print('TP53 ALIPHATIC INDEX ANALYSIS'); print('='*35); print('Aliphatic index:',round(ai,4))"
+  363  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); x=p.instability_index(); print('TP53 INSTABILITY INDEX ANALYSIS'); print('='*38); print('Instability index:',round(x,2)); print('Interpretation:', 'Protein is predicted to be unstable' if x>40 else 'Protein is predicted to be stable')"
+  364  python3 -c "from Bio import SeqIO; from Bio.SeqUtils.ProtParam import ProteinAnalysis; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=ProteinAnalysis(s); x=p.isoelectric_point(); print('TP53 ISOELECTRIC POINT ANALYSIS'); print('='*40); print('Theoretical pI:',round(x,2)); print('Interpretation:', 'Protein is acidic' if x<7 else 'Protein is basic' if x>7 else 'Protein is neutral')"
+  365  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s); print('TP53 AMINO ACID COMPOSITION'); print('='*35); print('AA\tCount\tPercentage'); print('-'*35); [print(f'{aa}\t{c[aa]}\t{c[aa]/len(s)*100:.2f}%') for aa in 'ACDEFGHIKLMNPQRSTVWY']; print('-'*35); print('Total:',len(s))"
+  366  cat > TP53_physicochemical_report.txt <<'EOF'
+TP53 PROTEIN PHYSICOCHEMICAL ANALYSIS
+=====================================
+
+Protein: Human TP53
+Sequence length: 393 amino acids
+Molecular weight: 43652.71 Da
+Theoretical pI: 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562
+Aliphatic index: 59.084
+
+INTERPRETATION
+--------------
+pI: Slightly acidic protein
+Instability index: Predicted unstable
+GRAVY: Overall hydrophilic character
+Aromaticity: 6.11% aromatic residues
+
+AMINO ACID COMPOSITION
+----------------------
+A  24  6.11%
+C  10  2.54%
+D  20  5.09%
+E  30  7.63%
+F  11  2.80%
+G  23  5.85%
+H  12  3.05%
+I   8  2.04%
+K  20  5.09%
+L  32  8.14%
+M  12  3.05%
+N  14  3.56%
+P  45 11.45%
+Q  15  3.82%
+R  26  6.62%
+S  38  9.67%
+T  22  5.60%
+V  18  4.58%
+W   4  1.02%
+Y   9  2.29%
+
+Total: 393
+EOF
+
+  367  cat TP53_physicochemical_report.txt
+  368  ls -lh TP53_physicochemical_report.txt
+  369  ls -lh
+  370  cat TP53_final_summary.txt
+  371  cat >> TP53_final_summary.txt <<'EOF'
+
+PHYSICOCHEMICAL PROPERTIES:
+Sequence length: 393 aa
+Molecular weight: 43652.71 Da
+Theoretical pI: 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562
+Aliphatic index: 59.084
+
+PHYSICOCHEMICAL INTERPRETATION:
+The protein has a slightly acidic theoretical pI.
+The instability index predicts the protein as unstable.
+The negative GRAVY value indicates an overall hydrophilic character.
+Aromatic residues constitute approximately 6.11% of the sequence.
+
+AMINO ACID COMPOSITION:
+A 24 (6.11%)
+C 10 (2.54%)
+D 20 (5.09%)
+E 30 (7.63%)
+F 11 (2.80%)
+G 23 (5.85%)
+H 12 (3.05%)
+I 8 (2.04%)
+K 20 (5.09%)
+L 32 (8.14%)
+M 12 (3.05%)
+N 14 (3.56%)
+P 45 (11.45%)
+Q 15 (3.82%)
+R 26 (6.62%)
+S 38 (9.67%)
+T 22 (5.60%)
+V 18 (4.58%)
+W 4 (1.02%)
+Y 9 (2.29%)
+Total: 393 aa
+EOF
+
+  372  cat TP53_final_summary.txt
+  373  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('TP53 MOTIF ANALYSIS'); print('='*25); pxxp=[m.start()+1 for m in re.finditer(r'P..P',s)]; print('PXXP motifs:',len(pxxp)); print('Positions:',pxxp if pxxp else 'None'); ch=[m.start()+1 for m in re.finditer(r'[CH].{0,2}[CH]',s)]; print('Cys/His cluster-like motifs:',len(ch)); print('Positions:',ch if ch else 'None')"
+  374  cat > TP53_motif_analysis.txt <<'EOF'
+TP53 MOTIF ANALYSIS
+===================
+
+PXXP motifs:
+Number: 6
+Positions: 64, 72, 77, 82, 89, 219
+
+Cys/His cluster-like motifs:
+Number: 4
+Positions: 176, 275, 296, 365
+EOF
+
+  375  cat TP53_motif_analysis.txt
+  376  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('TP53 N-GLYCOSYLATION MOTIF ANALYSIS'); print('='*35); m=[(x.start()+1,x.group()) for x in re.finditer(r'N[^P][ST]',s)]; print('N-X-S/T motifs:',len(m)); print('Positions and motifs:',m if m else 'None')"
+  377  cat > TP53_nglycosylation.txt <<'EOF'
+TP53 N-GLYCOSYLATION MOTIF ANALYSIS
+===================================
+
+N-X-S/T motifs: 2
+
+Positions and motifs:
+239 - NSS
+310 - NNT
+EOF
+
+  378  cat TP53_nglycosylation.txt
+  379  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('TP53 POTENTIAL PHOSPHORYLATION MOTIF ANALYSIS'); print('='*45); m=[(x.start()+1,x.group()) for x in re.finditer(r'[ST]P',s)]; print('S/T-P motifs:',len(m)); print('Positions and motifs:',m if m else 'None')"
+  380  cat > TP53_phosphorylation.txt <<'EOF'
+TP53 POTENTIAL PHOSPHORYLATION MOTIF ANALYSIS
+=============================================
+
+S/T-P motifs: 6
+
+Positions and motifs:
+33 - SP
+46 - SP
+81 - TP
+127 - SP
+150 - TP
+315 - SP
+EOF
+
+  381  cat TP53_phosphorylation.txt
+  382  python3 -c "from Bio import SeqIO; import re; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('TP53 TRYPSIN CLEAVAGE-SITE ANALYSIS'); print('='*35); p=[i+1 for i in range(len(s)-1) if s[i] in 'KR' and s[i+1]!='P']; print('Predicted cleavage sites:',len(p)); print('Positions:',p)"
+  383  cat > TP53_trypsin_cleavage.txt <<'EOF'
+TP53 TRYPSIN CLEAVAGE-SITE ANALYSIS
+===================================
+
+Predicted cleavage sites: 44
+
+Positions:
+24, 65, 101, 110, 120, 132, 139, 156, 158, 164,
+174, 175, 181, 196, 202, 209, 213, 248, 267, 273,
+280, 282, 283, 290, 291, 292, 305, 306, 319, 320,
+333, 335, 337, 342, 351, 357, 363, 370, 372, 373,
+379, 382, 386
+EOF
+
+  384  cat TP53_trypsin_cleavage.txt
+  385  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=[i+1 for i in range(len(s)-1) if s[i] in 'FWY' and s[i+1]!='P']; print('TP53 CHYMOTRYPSIN CLEAVAGE-SITE ANALYSIS'); print('='*40); print('Predicted cleavage sites:',len(p)); print('Positions:',p)"
+  386  cat > TP53_chymotrypsin_cleavage.txt <<'EOF'
+TP53 CHYMOTRYPSIN CLEAVAGE-SITE ANALYSIS
+========================================
+
+Predicted cleavage sites: 23
+
+Positions:
+19, 23, 53, 54, 103, 107, 109, 113, 126, 134, 146, 163,
+205, 212, 220, 234, 275, 299, 338, 341, 385, 393
+EOF
+
+  387  cat TP53_chymotrypsin_cleavage.txt
+  388  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); p=[i+1 for i in range(len(s)-1) if s[i] in 'FWY' and s[i+1]!='P']; cuts=[0]+p+[len(s)]; f=[cuts[i+1]-cuts[i] for i in range(len(cuts)-1)]; print('TP53 CHYMOTRYPSIN FRAGMENT LENGTH ANALYSIS'); print('='*42); print('Number of fragments:',len(f)); print('Fragment lengths (aa):',f); print('Total:',sum(f),'aa')"
+  389  cat > TP53_chymotrypsin_fragments.txt <<'EOF'
+TP53 CHYMOTRYPSIN FRAGMENT LENGTH ANALYSIS
+===========================================
+
+Number of fragments: 24
+
+Fragment lengths (aa):
+19, 4, 30, 1, 49, 4, 2, 4, 13, 8, 12, 17,
+42, 7, 8, 14, 2, 34, 57, 1, 10, 3, 44, 8
+
+Total: 393 aa
+EOF
+
+  390  cat TP53_chymotrypsin_fragments.txt
+  391  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); print('TP53 N-TERMINAL AND C-TERMINAL ANALYSIS'); print('='*42); print('N-terminal (first 20 aa):',s[:20]); print('C-terminal (last 20 aa):',s[-20:]); print('N-terminal residue:',s[0]); print('C-terminal residue:',s[-1])"
+  392  cat > TP53_terminal_analysis.txt <<'EOF'
+TP53 N-TERMINAL AND C-TERMINAL ANALYSIS
+=======================================
+
+N-terminal (first 20 aa):
+MEEPQSDPSVEPPLSQETFPS
+
+C-terminal (last 20 aa):
+GQSTSRHKKLMFKTEGPDSD
+
+N-terminal residue: M
+C-terminal residue: D
+EOF
+
+  393  cat TP53_terminal_analysis.txt
+  394  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); positions=[1,20,50,100,150,200,250,300,350,393]; print('TP53 RESIDUE-POSITION ANALYSIS'); print('='*35); [(print(f'Position {p}: {s[p-1]}')) for p in positions]"
+  395  cat > TP53_residue_positions.txt <<'EOF'
+TP53 RESIDUE-POSITION ANALYSIS
+==============================
+
+Position 1: M
+Position 20: S
+Position 50: I
+Position 100: Q
+Position 150: T
+Position 200: N
+Position 250: P
+Position 300: P
+Position 350: L
+Position 393: D
+EOF
+
+  396  cat TP53_residue_positions.txt
+  397  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); c=Counter(s[i:i+2] for i in range(len(s)-1)); print('TP53 DIPEPTIDE FREQUENCY ANALYSIS'); print('='*38); print('Total dipeptides:',len(s)-1); print('Top 20 most frequent dipeptides:'); [(print(f'{x}: {n}')) for x,n in c.most_common(20)]"
+  398  python3 -c "lines=open('TP53_blast_clean.txt').read().strip().splitlines(); print('TP53 BLAST SIMILARITY ANALYSIS'); print('='*35); print('Species/Hit\tIdentity\tAlignment length\tE-value'); [print(f'{x.split(chr(124))[2]}\t{x.split()[2]}%\t{x.split()[3]} aa\t{x.split()[4]}') for x in lines]"
+  399  python3 -c "lines=open('TP53_blast_clean.txt').read().strip().splitlines(); print('TP53 BLAST SIMILARITY ANALYSIS'); print('='*35); print('Species/Hit\tIdentity\tAlignment length\tE-value'); [(lambda f: print(f'{f[1].split(\"|\")[-1]:<15}\t{f[2]:>8}%\t{f[3]:>10} aa\t{f[4]}'))(x.split()) for x in lines]"
+  400  python3 -c "lines=open('TP53_blast_clean.txt').read().strip().splitlines(); f=open('TP53_blast_similarity.txt','w'); f.write('TP53 BLAST SIMILARITY ANALYSIS\n===================================\n\nSpecies/Hit\tIdentity\tAlignment length\tE-value\n'); [f.write(f'{x.split()[1].split(\"|\")[-1]}\t{x.split()[2]}%\t{x.split()[3]} aa\t{x.split()[4]}\n') for x in lines]; f.close()"
+  401  cat TP53_blast_similarity.txt
+  402  ls -1 TP53_*.txt
+  403  cat TP53_blast_clean.txt
+  404  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53.fa','fasta').seq).upper(); c=Counter(s); print('TP53 NUCLEOTIDE COMPOSITION'); print('='*35); [print(f'{x}: {c[x]} ({c[x]/len(s)*100:.2f}%)') for x in 'ACGT']; print(f'Total: {len(s)} nt'); print(f'GC content: {(c[\"G\"]+c[\"C\"])/len(s)*100:.2f}%')"
+  405  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_CDS.fa','fasta').seq).upper(); print('TP53 ORF / START-STOP CODON ANALYSIS'); print('='*40); print('CDS length:',len(s),'nt'); starts=[i+1 for i in range(len(s)-2) if s[i:i+3]=='ATG']; stops=[i+1 for i in range(len(s)-2) if s[i:i+3] in ['TAA','TAG','TGA']]; print('Start codon (ATG) positions:',starts); print('Total ATG:',len(starts)); print('Stop codon positions:',stops); print('Total stop codons:',len(stops)); print('First in-frame stop:',next((i+1 for i in range(0,len(s)-2,3) if s[i:i+3] in ['TAA','TAG','TGA']),'None')); print('Expected protein length:',(len(s)-3)//3,'aa excluding stop codon')"
+  406  python3 -c "from Bio import SeqIO; from Bio.Seq import Seq; cds=str(SeqIO.read('TP53_CDS.fa','fasta').seq).upper(); prot=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq).upper(); translated=str(Seq(cds[:1182]).translate(to_stop=True)); print('TP53 CDS -> PROTEIN VERIFICATION'); print('='*40); print('CDS length:',len(cds),'nt'); print('Translated protein length:',len(translated),'aa'); print('Reference protein length:',len(prot),'aa'); print('Exact match:',translated==prot); print('Translation preview:',translated[:30]+'...'+translated[-30:])"
+  407  ls -1 TP53_*.txt
+  408  python3 -c "from Bio import SeqIO; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq).upper(); positions=[175,245,248,249,273,282]; print('TP53 MUTATION HOTSPOT POSITION ANALYSIS'); print('='*40); print('Reference sequence length:',len(s),'aa'); print(); print('Position\tReference residue'); print('-'*30); [print(f'{p}\t{s[p-1]}') for p in positions]; f=open('TP53_mutation_hotspots.txt','w'); f.write('TP53 MUTATION HOTSPOT POSITION ANALYSIS\\n========================================\\n\\nReference sequence length: '+str(len(s))+' aa\\n\\nPosition\\tReference residue\\n'); [f.write(f'{p}\\t{s[p-1]}\\n') for p in positions]; f.close(); print(); print('Result saved to TP53_mutation_hotspots.txt')"
+  409  python3 -c "import matplotlib.pyplot as plt; from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq).upper(); c=Counter(s); aa=sorted(c); values=[c[x] for x in aa]; plt.figure(figsize=(12,6)); plt.bar(aa,values); plt.xlabel('Amino acid'); plt.ylabel('Count'); plt.title('Human TP53 Amino Acid Composition'); plt.tight_layout(); plt.savefig('TP53_amino_acid_composition.png',dpi=300); print('Saved: TP53_amino_acid_composition.png')"
+  410  pip install matplotlib
+  411  python3 -c "import matplotlib.pyplot as plt; from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq).upper(); c=Counter(s); aa=sorted(c); values=[c[x] for x in aa]; plt.figure(figsize=(12,6)); plt.bar(aa,values); plt.xlabel('Amino acid'); plt.ylabel('Count'); plt.title('Human TP53 Amino Acid Composition'); plt.tight_layout(); plt.savefig('TP53_amino_acid_composition.png',dpi=300); print('Saved: TP53_amino_acid_composition.png')"
+  412  python3 -c "import matplotlib.pyplot as plt; names=['Molecular weight (kDa)','Theoretical pI','Instability index','GRAVY','Aliphatic index']; values=[43.6527,6.33,73.59,-0.7562,59.084]; plt.figure(figsize=(10,6)); plt.bar(names,values); plt.ylabel('Value'); plt.title('Human TP53 Physicochemical Properties'); plt.xticks(rotation=20,ha='right'); plt.tight_layout(); plt.savefig('TP53_physical_properties.png',dpi=300); print('Saved: TP53_physical_properties.png')"
+  413  python3 -c "import matplotlib.pyplot as plt; species=['P53_HUMAN','P53_MACFA','P53_AETHIOPS','P53_TUPBE','P53_MARMOTA']; identity=[100.000,95.674,95.674,93.130,86.005]; plt.figure(figsize=(10,6)); plt.bar(species,identity); plt.xlabel('Species / BLAST hit'); plt.ylabel('Sequence identity (%)'); plt.title('TP53 BLAST Sequence Similarity'); plt.ylim(0,105); plt.xticks(rotation=20,ha='right'); plt.tight_layout(); plt.savefig('TP53_blast_similarity.png',dpi=300); print('Saved: TP53_blast_similarity.png')"
+  414  ls -lh TP53_*
+  415  python3 -c "from Bio import SeqIO; from collections import Counter; s=str(SeqIO.read('TP53.fa','fasta').seq).upper(); c=Counter(s); f=open('TP53_nucleotide_composition.txt','w'); f.write('TP53 NUCLEOTIDE COMPOSITION\n===========================\n\n'); f.write(f'A: {c[\"A\"]} ({c[\"A\"]/len(s)*100:.2f}%)\n'); f.write(f'C: {c[\"C\"]} ({c[\"C\"]/len(s)*100:.2f}%)\n'); f.write(f'G: {c[\"G\"]} ({c[\"G\"]/len(s)*100:.2f}%)\n'); f.write(f'T: {c[\"T\"]} ({c[\"T\"]/len(s)*100:.2f}%)\n'); f.write(f'Total: {len(s)} nt\n'); f.write(f'GC content: {(c[\"G\"]+c[\"C\"])/len(s)*100:.2f}%\n'); f.close(); print('Saved: TP53_nucleotide_composition.txt')"
+  416  cat >> TP53_final_summary.txt <<'EOF'
+
+NUCLEOTIDE ANALYSIS:
+CDS length: 1182 nt
+Total nucleotide sequence length: 2512 nt
+GC content: 53.38%
+
+ORF / CODON ANALYSIS:
+Total ATG start codons: 23
+Total stop codons: 31
+First in-frame stop codon: 1180
+Expected protein length: 393 aa excluding stop codon
+
+CDS → PROTEIN VERIFICATION:
+CDS length: 1182 nt
+Translated protein length: 393 aa
+Reference protein length: 393 aa
+Exact match: True
+
+MOTIF ANALYSIS:
+PXXP motifs: 6
+Cys/His cluster-like motifs: 4
+
+N-GLYCOSYLATION:
+N-X-S/T motifs: 2
+Positions: 239 (NSS), 310 (NNT)
+
+POTENTIAL PHOSPHORYLATION:
+S/T-P motifs: 6
+Positions: 33, 46, 81, 127, 150, 315
+
+TRYPSIN CLEAVAGE:
+Predicted cleavage sites: 44
+
+CHYMOTRYPSIN CLEAVAGE:
+Predicted cleavage sites: 23
+Predicted fragments: 24
+
+TERMINAL ANALYSIS:
+N-terminal residue: M
+C-terminal residue: D
+
+RESIDUE-POSITION ANALYSIS:
+Positions analyzed: 1, 20, 50, 100, 150, 200, 250, 300, 350, 393
+
+DIPEPTIDE ANALYSIS:
+Total dipeptides: 392
+Most frequent: AP (9), PP (7), SS (7), SD (6), PA (6)
+
+MUTATION HOTSPOT POSITION ANALYSIS:
+Reference sequence length: 393 aa
+Positions analyzed: 175, 245, 248, 249, 273, 282
+Reference residues: R, G, R, R, R, R
+
+VISUALIZATIONS GENERATED:
+- TP53_amino_acid_composition.png
+- TP53_physical_properties.png
+- TP53_blast_similarity.png
+
+END OF INTEGRATED ANALYSIS
+EOF
+
+  417  cat TP53_final_summary.txt
+  418  ls -lh TP53_*
+  419  tail -n 30 all_commands.txt
+  420  cp all_commands.txt all_commands_backup.txt
+  421  ls -lh all_commands*.txt
+  422  history -a
+  423  history > all_commands.txt
+  424  ls -lh all_commands*.txt
+  425  tail -n 15 all_commands.txt
+  426  for f in TP53_blast_interpretation.txt TP53_blast_summary.txt TP53_top5_hits.txt TP53_conservation.txt TP53_pepstats.txt TP53_physicochemical_report.txt; do     echo;     echo "========== $f ==========";     cat "$f"; done
+  427  head -n 5 TP53_protein.fa
+  428  head -n 5 TP53_CDS.fa
+  429  curl -L "https://rest.uniprot.org/uniprotkb/P04637.fasta" -o TP53_uniprot_reference.fa
+  430  head -5 TP53_uniprot_reference.fa
+  431  python3 -c "from Bio import SeqIO; a=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); b=str(SeqIO.read('TP53_uniprot_reference.fa','fasta').seq); print('Our sequence:',len(a),'aa'); print('Reference:',len(b),'aa')"
+  432  python3 -c "from Bio import SeqIO; a=str(SeqIO.read('TP53_protein_clean.fa','fasta').seq); b=str(SeqIO.read('TP53_uniprot_reference.fa','fasta').seq); print('EXACT MATCH:',a==b); print('Differences:',sum(x!=y for x,y in zip(a,b)))"
+  433  curl -L "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000546.6&rettype=fasta_cds_aa&retmode=text" -o TP53_ncbi_cds_reference.fa
+  434  head -5 TP53_ncbi_cds_reference.fa
+  435  curl -L "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_000546.6&rettype=fasta_cds_na&retmode=text" -o TP53_ncbi_cds_reference.fa
+  436  head -5 TP53_ncbi_cds_reference.fa
+  437  python3 -c "from Bio import SeqIO; a=str(SeqIO.read('TP53_CDS.fa','fasta').seq).upper(); b=str(SeqIO.read('TP53_ncbi_cds_reference.fa','fasta').seq).upper(); print('Our CDS length:',len(a),'nt'); print('NCBI reference length:',len(b),'nt'); print('EXACT MATCH:',a==b); print('Differences:',sum(x!=y for x,y in zip(a,b)))"
+  438  cat > TP53_reference_validation.txt <<'EOF'
+TP53 REFERENCE VALIDATION
+=========================
+
+Purpose:
+Directly validate the analyzed TP53 protein and CDS sequences against
+official human TP53 reference sequences.
+
+1. PROTEIN SEQUENCE VALIDATION
+------------------------------
+Our sequence file:
+TP53_protein_clean.fa
+
+Reference:
+UniProt P04637 (P53_HUMAN)
+
+Our sequence length:       393 aa
+Reference sequence length: 393 aa
+Exact sequence match:     TRUE
+Number of differences:    0
+
+Conclusion:
+The analyzed TP53 protein sequence is identical, residue-for-residue,
+to the canonical human TP53 UniProt P04637 reference sequence.
+
+
+2. CDS SEQUENCE VALIDATION
+--------------------------
+Our sequence file:
+TP53_CDS.fa
+
+Reference:
+NCBI NM_000546.6
+Protein reference: NP_000537.3
+
+Our CDS length:       1182 nt
+Reference CDS length: 1182 nt
+Exact sequence match: TRUE
+Number of differences: 0
+
+Conclusion:
+The analyzed TP53 CDS is identical, nucleotide-for-nucleotide,
+to the NCBI NM_000546.6 TP53 reference CDS.
+
+
+3. BLAST VALIDATION
+-------------------
+Top hit:
+P53_HUMAN
+
+Sequence identity: 100.000%
+Alignment length: 393 aa
+E-value: 0.0
+Bit score: 813
+
+Conclusion:
+BLAST independently confirms that the analyzed protein sequence
+corresponds to human TP53.
+
+
+4. OVERALL VALIDATION
+---------------------
+Protein sequence:
+393 aa
+Exact match with UniProt P04637: YES
+Differences: 0
+
+CDS:
+1182 nt
+Exact match with NCBI NM_000546.6: YES
+Differences: 0
+
+BLAST:
+Human TP53 identity: 100%
+
+Overall conclusion:
+The TP53 protein and CDS sequences used in this project have been
+independently validated against authoritative reference sequences.
+Both sequences show an exact match with their respective human TP53
+reference sequences, with zero sequence differences.
+
+
+REFERENCE RECORDS
+-----------------
+UniProt: P04637 (P53_HUMAN)
+NCBI transcript: NM_000546.6
+NCBI protein: NP_000537.3
+EOF
+
+  439  cat TP53_reference_validation.txt
+  440  history -a
+  441  history > all_commands.txt
+  442  cp all_commands.txt all_commands_backup.txt
+  443  ls -lh TP53_reference_validation.txt all_commands*.txt
+  444  python3 -c "import matplotlib.pyplot as plt; hotspots={175:'R175',245:'G245',248:'R248',249:'R249',273:'R273',282:'R282'}; fig,ax=plt.subplots(figsize=(14,4)); ax.plot([1,393],[1,1],linewidth=5); ax.scatter(list(hotspots.keys()),[1]*len(hotspots),s=100,zorder=3); [ax.annotate(label,(pos,1),xytext=(0,25 if i%2==0 else -35),textcoords='offset points',ha='center',arrowprops=dict(arrowstyle='->')) for i,(pos,label) in enumerate(hotspots.items())]; ax.set_xlim(1,393); ax.set_ylim(0.85,1.15); ax.set_yticks([]); ax.set_xlabel('TP53 amino-acid position'); ax.set_title('Human TP53 Mutation Hotspot Map'); ax.grid(axis='x',alpha=0.2); plt.tight_layout(); plt.savefig('TP53_mutation_hotspot_map.png',dpi=300); print('Saved: TP53_mutation_hotspot_map.png')"
+  445  ls -lh TP53_mutation_hotspot_map.png
+  446  xdg-open TP53_amino_acid_composition.png
+  447  xdg-open TP53_blast_similarity.png
+  448  xdg-open TP53_physical_properties.png
+  449  cat > TP53_sequence_profile.py <<'PY'
+from Bio import SeqIO
+import matplotlib.pyplot as plt
+
+seq = str(SeqIO.read("TP53_protein_clean.fa", "fasta").seq)
+
+hydropathy = {
+    'I':4.5, 'V':4.2, 'L':3.8, 'F':2.8, 'C':2.5,
+    'M':1.9, 'A':1.8, 'G':-0.4, 'T':-0.7, 'S':-0.8,
+    'W':-0.9, 'Y':-1.3, 'P':-1.6, 'H':-3.2, 'E':-3.5,
+    'Q':-3.5, 'D':-3.5, 'N':-3.5, 'K':-3.9, 'R':-4.5
+}
+
+window = 19
+positions = []
+values = []
+
+for i in range(len(seq) - window + 1):
+    segment = seq[i:i+window]
+    score = sum(hydropathy[aa] for aa in segment) / window
+    positions.append(i + window//2 + 1)
+    values.append(score)
+
+plt.figure(figsize=(12,5))
+plt.plot(positions, values)
+plt.axhline(0, linestyle='--')
+plt.xlabel("Residue position")
+plt.ylabel("Average hydropathy")
+plt.title("Human TP53 Hydropathy Profile")
+plt.tight_layout()
+
+plt.savefig("TP53_hydropathy_profile.png", dpi=300)
+plt.show()
+PY
+
+  450  python3 TP53_sequence_profile.py
+  451  xdg-open TP53_hydropathy_profile.png
+  452  cat > TP53_mutation_hotspot_plot.py <<'PY'
+import matplotlib.pyplot as plt
+
+length = 393
+hotspots = [175, 245, 248, 249, 273, 282]
+
+plt.figure(figsize=(13, 3))
+
+# Protein sequence line
+plt.plot([1, length], [0, 0], linewidth=4)
+
+# Hotspot positions
+for pos in hotspots:
+    plt.scatter(pos, 0, s=100, zorder=3)
+    plt.text(pos, 0.12, str(pos), ha='center', va='bottom', fontsize=10)
+
+# Domain/reference landmarks
+plt.axvline(1, linestyle='--', alpha=0.5)
+plt.axvline(393, linestyle='--', alpha=0.5)
+
+plt.xlim(1, 393)
+plt.ylim(-0.25, 0.35)
+
+plt.xlabel("TP53 residue position")
+plt.yticks([])
+plt.title("Human TP53 Mutation Hotspot Positions")
+
+plt.tight_layout()
+plt.savefig("TP53_mutation_hotspots.png", dpi=300)
+PY
+
+  453  python3 TP53_mutation_hotspot_plot.py
+  454  xdg-open TP53_mutation_hotspots.png
+  455  nano TP53_mutation_hotspots.py
+  456  python3 TP53_mutation_hotspots.py
+  457  cat TP53_mutation_hotspots.py
+  458  sed -i '/plt.show()/d' TP53_mutation_hotspots.py
+  459  python3 TP53_mutation_hotspots.py
+  460  xdg-open TP53_mutation_hotspots.png
+  461  ls -lh TP53_*cleav*
+  462  grep -Rni "cleavage\|trypsin\|chymotrypsin" TP53_*.txt
+  463  cat TP53_trypsin_cleavage.txt
+  464  cat TP53_chymotrypsin_cleavage.txt
+  465  nano TP53_cleavage_map.py
+  466  python3 TP53_cleavage_map.py
+  467  xdg-open TP53_cleavage_map.png
+  468  nano TP53_gc_codon_plot.py
+  469  python3 TP53_gc_codon_plot.py
+  470  xdg-open TP53_gc_codon_plot.png
+  471  nano TP53_interactive_conservation.py
+  472  python3 -c "import plotly; print(plotly.__version__)"
+  473  pip install plotly
+  474  python3 -c "import plotly; print(plotly.__version__)"
+  475  python3 TP53_interactive_conservation.py
+  476  xdg-open TP53_interactive_conservation.html
+  477  nano TP53_interactive_conservation.py
+  478  python3 TP53_interactive_conservation.py
+  479  xdg-open TP53_interactive_conservation.html
+  480  cat TP53_interactive_conservation.py
+  481  python3 TP53_interactive_conservation.py
+  482  xdg-open TP53_interactive_conservation.html
+  483  nano TP53_interactive_conservation.py
+  484  python3 TP53_interactive_conservation.py
+  485  xdg-open TP53_interactive_conservation.html
+  486  nano TP53_interactive_conservation.py
+  487  python3 TP53_interactive_conservation.py
+  488  xdg-open TP53_interactive_conservation.html
+  489  cd ~/TP53_project
+  490  nano TP53_interactive_conservation.py
+  491  python3 TP53_interactive_conservation.py
+  492  python3 -c "import urllib.request; print(urllib.request.urlopen('https://rest.uniprot.org/uniprotkb/search?query=gene:TP53+AND+organism_id:9598&format=tsv&fields=accession,id,protein_name').read().decode())"
+  493  cd ~/TP53_project
+  494  nano TP53_interactive_conservation.py
+  495  python3 TP53_interactive_conservation.py
+  496  xdg-open TP53_interactive_conservation.html
+  497  cd ~/TP53_project
+  498  nano TP53_interactive_conservation.py
+  499  python3 TP53_interactive_conservation.py
+  500  cd ~/TP53_project
+  501  nano TP53_interactive_conservation.py
+  502  cd ~/TP53_project
+  503  nano TP53_interactive_conservation.py
+  504  python3 TP53_interactive_conservation.py
+  505  cd ~/TP53_project
+  506  nano TP53_interactive_conservation.py
+  507  python3 TP53_interactive_conservation.py
+  508  xdg-open TP53_interactive_conservation.html
+  509  ls -lh
+  510  ls
+  511  mkdir -p ~/TP53_project/commands_and_results
+  512  cp ~/TP53_project/all_commands.txt ~/TP53_project/commands_and_results/
+  513  cp ~/TP53_project/all_commands_backup.txt ~/TP53_project/commands_and_results/
+  514  history > ~/TP53_project/commands_and_results/linux_commands_history.txt
+  515  rm -rf ~/TP53_project/commands_and_results
+  516  cd ~/TP53_project
+  517  mkdir -p commands_and_results/Linux/results
+  518  mkdir -p commands_and_results/Linux/sequences
+  519  history > commands_and_results/Linux/linux_commands_history.txt
+  520  cp all_commands.txt commands_and_results/Linux/
+  521  cp all_commands_backup.txt commands_and_results/Linux/
+  522  cp TP53.fa commands_and_results/Linux/sequences/
+  523  cp TP53_CDS.fa commands_and_results/Linux/sequences/
+  524  cp TP53_protein.fa commands_and_results/Linux/sequences/
+  525  cp TP53_ncbI_cds_reference.fa commands_and_results/Linux/sequences/
+  526  cp TP53_uniprot_reference.fa commands_and_results/Linux/sequences/
+  527  cp Human_TP53.fa commands_and_results/Linux/sequences/
+  528  cp Chimpanzee_TP53.fa commands_and_results/Linux/sequences/
+  529  cp Rhesus_macaque_TP53.fa commands_and_results/Linux/sequences/
+  530  cp Marmoset_TP53.fa commands_and_results/Linux/sequences/
+  531  cp TP53_blast.txt commands_and_results/Linux/results/
+  532  cp TP53_blast_clean.txt commands_and_results/Linux/results/
+  533  cp TP53_blast_interpretation.txt commands_and_results/Linux/results/
+  534  cp TP53_blast_summary.txt commands_and_results/Linux/results/
+  535  cp TP53_blast_swissprot.txt commands_and_results/Linux/results/
+  536  cp TP53_reference_validation.txt commands_and_results/Linux/results/
+  537  cp TP53_final_summary.txt commands_and_results/Linux/results/
+  538  cp TP53_conservation.txt commands_and_results/Linux/results/
+  539  cp TP53_nucleotide_composition.txt commands_and_results/Linux/results/
+  540  cp TP53_amino_acid_composition.txt commands_and_results/Linux/results/
+  541  cp TP53_physicochemical.txt commands_and_results/Linux/results/
+  542  cp TP53_phosphorylation.txt commands_and_results/Linux/results/
+  543  cp TP53_nglycosylation.txt commands_and_results/Linux/results/
+  544  cp TP53_pepstats.txt commands_and_results/Linux/results/
+  545  cp TP53_motif_analysis.txt commands_and_results/Linux/results/
+  546  cp TP53_mutation_hotspots.txt commands_and_results/Linux/results/
+  547  cp TP53_residue_positions.txt commands_and_results/Linux/results/
+  548  cp TP53_terminal_analysis.txt commands_and_results/Linux/results/
+  549  cp TP53_interactive_conservation.html commands_and_results/Linux/results/
+  550  find commands_and_results/Linux -type f | sort > commands_and_results/Linux/file_inventory.txt
+  551  find commands_and_results/Linux -type f | sort
+  552  echo "===== RESULTS ====="
+  553  find commands_and_results/Linux/results -type f | sort
+  554  echo
+  555  echo "===== SEQUENCES ====="
+  556  find commands_and_results/Linux/sequences -type f | sort
+  557  echo
+  558  echo "===== PLOTS / HTML IN PROJECT ====="
+  559  find . -maxdepth 1 -type f \( -name "*.png" -o -name "*.html" \) | sort
+  560  echo
+  561  echo "===== EMPTY FILES ====="
+  562  find commands_and_results/Linux -type f -empty -print
+  563  echo
+  564  echo "===== RESULT COUNT ====="
+  565  find commands_and_results/Linux/results -type f | wc -l
+  566  echo
+  567  echo "===== SEQUENCE COUNT ====="
+  568  find commands_and_results/Linux/sequences -type f | wc -l
+  569  echo "===== LINUX PROJECT VALIDATION ====="
+  570  echo
+  571  echo "===== RESULTS ====="
+  572  find commands_and_results/Linux/results -type f | sort
+  573  echo
+  574  echo "===== SEQUENCES ====="
+  575  find commands_and_results/Linux/sequences -type f | sort
+  576  echo
+  577  echo "===== PLOTS / HTML ====="
+  578  find . -maxdepth 1 -type f \( -name "*.png" -o -name "*.html" \) | sort
+  579  echo
+  580  echo "===== EMPTY FILES ====="
+  581  find commands_and_results/Linux -type f -empty -print
+  582  echo
+  583  echo "===== COUNTS ====="
+  584  echo -n "Results: "
+  585  find commands_and_results/Linux/results -type f | wc -l
+  586  echo -n "Sequences: "
+  587  find commands_and_results/Linux/sequences -type f | wc -l
+  588  echo -n "Plots/HTML: "
+  589  find . -maxdepth 1 -type f \( -name "*.png" -o -name "*.html" \) | wc -l
+  590  rm commands_and_results/Linux/results/TP53_blast.txt
+  591  mkdir -p commands_and_results/Linux/plots
+  592  cp TP53_amino_acid_composition.png TP53_blast_similarity.png TP53_cleavage_map.png TP53_gc_codon_plot.png TP53_hydropathy_profile.png TP53_interactive_conservation.html TP53_mutation_hotspot_map.png TP53_mutation_hotspots.png TP53_physical_properties.png commands_and_results/Linux/plots/
+  593  echo "===== FINAL LINUX CHECK ====="
+  594  echo
+  595  echo "RESULTS:"
+  596  find commands_and_results/Linux/results -type f | sort
+  597  echo
+  598  echo "SEQUENCES:"
+  599  find commands_and_results/Linux/sequences -type f | sort
+  600  echo
+  601  echo "PLOTS:"
+  602  find commands_and_results/Linux/plots -type f | sort
+  603  echo
+  604  echo "EMPTY FILES:"
+  605  find commands_and_results/Linux -type f -empty -print
+  606  echo
+  607  echo "COUNTS:"
+  608  echo -n "Results: "
+  609  find commands_and_results/Linux/results -type f | wc -l
+  610  echo -n "Sequences: "
+  611  find commands_and_results/Linux/sequences -type f | wc -l
+  612  echo -n "Plots: "
+  613  find commands_and_results/Linux/plots -type f | wc -l
+  614  history > commands_and_results/Linux/linux_commands_history.txt

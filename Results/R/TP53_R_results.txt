@@ -1,0 +1,14 @@
+TP53 DNA SEQUENCE ANALYSIS RESULTS
+=================================
+
+CDS length: 1182 nt
+Protein length: 393 aa
+GC content: 56.85279 %
+AT content: 43.14721 %
+Molecular weight: 43653.18 Da
+Theoretical pI: 6.781679 
+
+Longest ORFs:
+Frame 1: 1182 nt / 393 aa
+Frame 2: 204 nt / 67 aa
+Frame 3: 18 nt / 5 aa

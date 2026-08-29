@@ -1,0 +1,10 @@
+TP53 MOTIF ANALYSIS
+===================
+
+PXXP motifs:
+Number: 6
+Positions: 64, 72, 77, 82, 89, 219
+
+Cys/His cluster-like motifs:
+Number: 4
+Positions: 176, 275, 296, 365

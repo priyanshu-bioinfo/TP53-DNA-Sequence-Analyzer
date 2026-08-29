@@ -1,0 +1,48 @@
+PEPSTATS of TP53_CDS_NM_000546.6_1 from 1 to 393
+
+Molecular weight = 43653.18  		Residues = 393   
+Average Residue Weight  = 111.077 	Charge   = 2.0   
+Isoelectric Point = 6.7615
+A280 Molar Extinction Coefficients  = 35410 (reduced)   36035 (cystine bridges)
+A280 Extinction Coefficients 1mg/ml = 0.811 (reduced)   0.825 (cystine bridges)
+Improbability of expression in inclusion bodies = 0.865
+
+Residue		Number		Mole%		DayhoffStat
+A = Ala		24		6.107  		0.710  	
+B = Asx		0		0.000  		0.000  	
+C = Cys		10		2.545  		0.877  	
+D = Asp		20		5.089  		0.925  	
+E = Glu		30		7.634  		1.272  	
+F = Phe		11		2.799  		0.777  	
+G = Gly		23		5.852  		0.697  	
+H = His		12		3.053  		1.527  	
+I = Ile		8		2.036  		0.452  	
+J = ---		0		0.000  		0.000  	
+K = Lys		20		5.089  		0.771  	
+L = Leu		32		8.142  		1.100  	
+M = Met		12		3.053  		1.796  	
+N = Asn		14		3.562  		0.828  	
+O = ---		0		0.000  		0.000  	
+P = Pro		45		11.450 		2.202  	
+Q = Gln		15		3.817  		0.979  	
+R = Arg		26		6.616  		1.350  	
+S = Ser		38		9.669  		1.381  	
+T = Thr		22		5.598  		0.918  	
+U = ---		0		0.000  		0.000  	
+V = Val		18		4.580  		0.694  	
+W = Trp		4		1.018  		0.783  	
+X = Xaa		0		0.000  		0.000  	
+Y = Tyr		9		2.290  		0.674  	
+Z = Glx		0		0.000  		0.000  	
+
+Property	Residues		Number		Mole%
+Tiny		(A+C+G+S+T)		117		29.771
+Small		(A+B+C+D+G+N+P+S+T+V)	214		54.453
+Aliphatic	(A+I+L+V)		82		20.865
+Aromatic	(F+H+W+Y)		36		 9.160
+Non-polar	(A+C+F+G+I+L+M+P+V+W+Y)	196		49.873
+Polar		(D+E+H+K+N+Q+R+S+T+Z)	197		50.127
+Charged		(B+D+E+H+K+R+Z)		108		27.481
+Basic		(H+K+R)			58		14.758
+Acidic		(B+D+E+Z)		50		12.723
+

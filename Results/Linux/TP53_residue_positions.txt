@@ -1,0 +1,13 @@
+TP53 RESIDUE-POSITION ANALYSIS
+==============================
+
+Position 1: M
+Position 20: S
+Position 50: I
+Position 100: Q
+Position 150: T
+Position 200: N
+Position 250: P
+Position 300: P
+Position 350: L
+Position 393: D

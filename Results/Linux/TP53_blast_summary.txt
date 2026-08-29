@@ -1,0 +1,9 @@
+BLASTP Swiss-Prot Results
+==========================
+Query: TP53_CDS_NM_000546.6_1
+
+TP53_CDS_NM_000546.6_1  gi|269849759|sp|P04637.4|P53_HUMAN  100.000  393  0.0  813  N/A                                                                                                 
+TP53_CDS_NM_000546.6_1  gi|47117801|sp|P56423.2|P53_MACFA   95.674   393  0.0  782  N/A                                                                                                 
+TP53_CDS_NM_000546.6_1  sp|P13481.1|                        95.674   393  0.0  780  RecName:  Full=Cellular  tumor  antigen  p53;  AltName:  Full=Tumor  suppressor  p53  [Chlorocebus  aethiops]
+TP53_CDS_NM_000546.6_1  gi|10720194|sp|Q9TTA1.1|P53_TUPBE   93.130   393  0.0  707  N/A                                                                                                 
+TP53_CDS_NM_000546.6_1  sp|O36006.1|                        86.005   393  0.0  672  RecName:  Full=Cellular  tumor  antigen  p53;  AltName:  Full=Tumor  suppressor  p53  [Marmota      monax]

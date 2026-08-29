@@ -1,0 +1,9 @@
+TP53 CONSERVATION COMPARISON
+============================
+
+Species/Hit	Identity	Difference from human
+P53_HUMAN	100.000%	0.000%
+P53_MACFA	95.674%	4.326%
+	95.674%	4.326%
+P53_TUPBE	93.130%	6.870%
+	86.005%	13.995%

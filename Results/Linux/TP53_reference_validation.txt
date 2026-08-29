@@ -1,0 +1,86 @@
+TP53 REFERENCE VALIDATION
+=========================
+
+Purpose:
+Directly validate the analyzed TP53 protein and CDS sequences against
+official human TP53 reference sequences.
+
+1. PROTEIN SEQUENCE VALIDATION
+------------------------------
+Our sequence file:
+TP53_protein_clean.fa
+
+Reference:
+UniProt P04637 (P53_HUMAN)
+
+Our sequence length:       393 aa
+Reference sequence length: 393 aa
+Exact sequence match:     TRUE
+Number of differences:    0
+
+Conclusion:
+The analyzed TP53 protein sequence is identical, residue-for-residue,
+to the canonical human TP53 UniProt P04637 reference sequence.
+
+
+2. CDS SEQUENCE VALIDATION
+--------------------------
+Our sequence file:
+TP53_CDS.fa
+
+Reference:
+NCBI NM_000546.6
+Protein reference: NP_000537.3
+
+Our CDS length:       1182 nt
+Reference CDS length: 1182 nt
+Exact sequence match: TRUE
+Number of differences: 0
+
+Conclusion:
+The analyzed TP53 CDS is identical, nucleotide-for-nucleotide,
+to the NCBI NM_000546.6 TP53 reference CDS.
+
+
+3. BLAST VALIDATION
+-------------------
+Top hit:
+P53_HUMAN
+
+Sequence identity: 100.000%
+Alignment length: 393 aa
+E-value: 0.0
+Bit score: 813
+
+Conclusion:
+BLAST independently confirms that the analyzed protein sequence
+corresponds to human TP53.
+
+
+4. OVERALL VALIDATION
+---------------------
+Protein sequence:
+393 aa
+Exact match with UniProt P04637: YES
+Differences: 0
+
+CDS:
+1182 nt
+Exact match with NCBI NM_000546.6: YES
+Differences: 0
+
+BLAST:
+Human TP53 identity: 100%
+
+Overall conclusion:
+The TP53 protein and CDS sequences used in this project have been
+independently validated against authoritative reference sequences.
+Both sequences show an exact match with their respective human TP53
+reference sequences, with zero sequence differences.
+
+
+REFERENCE RECORDS
+-----------------
+UniProt: P04637 (P53_HUMAN)
+NCBI transcript: NM_000546.6
+NCBI protein: NP_000537.3

@@ -1,0 +1,23 @@
+TP53 DNA Sequence Analysis
+
+Accession: NM_000546.6
+Sequence length: 2512 bp
+
+Nucleotide counts:
+A: 532
+T: 639
+G: 621
+C: 720
+
+Nucleotide percentages:
+A: 21.18%
+T: 25.44%
+G: 24.72%
+C: 28.66%
+
+GC content: 53.38%
+AT content: 46.62%
+GC/AT ratio: 1.1452
+
+GC skew: -0.0738
+AT skew: -0.0914

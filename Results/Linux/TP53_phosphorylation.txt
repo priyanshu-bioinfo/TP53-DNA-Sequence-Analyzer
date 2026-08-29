@@ -1,0 +1,12 @@
+TP53 POTENTIAL PHOSPHORYLATION MOTIF ANALYSIS
+=============================================
+
+S/T-P motifs: 6
+
+Positions and motifs:
+33 - SP
+46 - SP
+81 - TP
+127 - SP
+150 - TP
+315 - SP

@@ -1,0 +1,14 @@
+TP53 BLASTP INTERPRETATION
+==========================
+
+Top hit: P53_HUMAN
+Identity: 100.000%
+Alignment length: 393 aa
+E-value: 0.0
+Bit score: 813
+
+Interpretation:
+The query protein sequence shows a 100% identical match to the
+human TP53 protein sequence over the 393 amino-acid sequence.
+This strongly confirms that the analyzed sequence corresponds
+to human TP53.

@@ -1,0 +1,12 @@
+TP53 MUTATION HOTSPOT POSITION ANALYSIS
+========================================
+
+Reference sequence length: 393 aa
+
+Position	Reference residue
+175	R
+245	G
+248	R
+249	R
+273	R
+282	R

@@ -1,0 +1,138 @@
+TP53 PROTEIN ANALYSIS – FINAL SUMMARY
+=====================================
+
+Protein:
+Human TP53 (tumor protein p53)
+
+Sequence length:
+393 amino acids
+
+BLAST identification:
+The analyzed TP53 protein sequence shows a 100% identical match to human TP53 (P04637.4).
+
+Top BLAST hits:
+1. P53_HUMAN   100.000% identity
+2. P53_MACFA    95.674% identity
+3. P53_AETHIOPS 95.674% identity
+4. P53_TUPBE    93.130% identity
+5. P53_MARMOTA  86.005% identity
+
+Conservation comparison:
+P53_HUMAN    100.000% identity
+P53_MACFA     95.674% identity
+P53_TUPBE     93.130% identity
+
+Interpretation:
+The analyzed sequence corresponds to human TP53. The high sequence
+identity observed in related species indicates strong evolutionary
+conservation of the TP53 protein.
+
+Other analyses performed:
+- Motif analysis
+- N-glycosylation motif identification
+- Cys/His cluster identification
+- Potential phosphorylation motif identification
+- Trypsin cleavage-site analysis
+- Chymotrypsin cleavage-site analysis
+- Fragment length analysis
+- N-terminal and C-terminal analysis
+- Residue-position analysis
+- Dipeptide frequency analysis
+- BLAST similarity analysis
+
+PHYSICOCHEMICAL PROPERTIES:
+Sequence length: 393 aa
+Molecular weight: 43652.71 Da
+Theoretical pI: 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562
+Aliphatic index: 59.084
+
+PHYSICOCHEMICAL INTERPRETATION:
+The protein has a slightly acidic theoretical pI.
+The instability index predicts the protein as unstable.
+The negative GRAVY value indicates an overall hydrophilic character.
+Aromatic residues constitute approximately 6.11% of the sequence.
+
+AMINO ACID COMPOSITION:
+A 24 (6.11%)
+C 10 (2.54%)
+D 20 (5.09%)
+E 30 (7.63%)
+F 11 (2.80%)
+G 23 (5.85%)
+H 12 (3.05%)
+I 8 (2.04%)
+K 20 (5.09%)
+L 32 (8.14%)
+M 12 (3.05%)
+N 14 (3.56%)
+P 45 (11.45%)
+Q 15 (3.82%)
+R 26 (6.62%)
+S 38 (9.67%)
+T 22 (5.60%)
+V 18 (4.58%)
+W 4 (1.02%)
+Y 9 (2.29%)
+Total: 393 aa
+
+NUCLEOTIDE ANALYSIS:
+CDS length: 1182 nt
+Total nucleotide sequence length: 2512 nt
+GC content: 53.38%
+
+ORF / CODON ANALYSIS:
+Total ATG start codons: 23
+Total stop codons: 31
+First in-frame stop codon: 1180
+Expected protein length: 393 aa excluding stop codon
+
+CDS → PROTEIN VERIFICATION:
+CDS length: 1182 nt
+Translated protein length: 393 aa
+Reference protein length: 393 aa
+Exact match: True
+
+MOTIF ANALYSIS:
+PXXP motifs: 6
+Cys/His cluster-like motifs: 4
+
+N-GLYCOSYLATION:
+N-X-S/T motifs: 2
+Positions: 239 (NSS), 310 (NNT)
+
+POTENTIAL PHOSPHORYLATION:
+S/T-P motifs: 6
+Positions: 33, 46, 81, 127, 150, 315
+
+TRYPSIN CLEAVAGE:
+Predicted cleavage sites: 44
+
+CHYMOTRYPSIN CLEAVAGE:
+Predicted cleavage sites: 23
+Predicted fragments: 24
+
+TERMINAL ANALYSIS:
+N-terminal residue: M
+C-terminal residue: D
+
+RESIDUE-POSITION ANALYSIS:
+Positions analyzed: 1, 20, 50, 100, 150, 200, 250, 300, 350, 393
+
+DIPEPTIDE ANALYSIS:
+Total dipeptides: 392
+Most frequent: AP (9), PP (7), SS (7), SD (6), PA (6)
+
+MUTATION HOTSPOT POSITION ANALYSIS:
+Reference sequence length: 393 aa
+Positions analyzed: 175, 245, 248, 249, 273, 282
+Reference residues: R, G, R, R, R, R
+
+VISUALIZATIONS GENERATED:
+- TP53_amino_acid_composition.png
+- TP53_physical_properties.png
+- TP53_blast_similarity.png
+
+END OF INTEGRATED ANALYSIS

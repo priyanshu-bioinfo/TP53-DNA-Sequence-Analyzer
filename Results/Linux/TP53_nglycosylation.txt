@@ -1,0 +1,8 @@
+TP53 N-GLYCOSYLATION MOTIF ANALYSIS
+===================================
+
+N-X-S/T motifs: 2
+
+Positions and motifs:
+239 - NSS
+310 - NNT

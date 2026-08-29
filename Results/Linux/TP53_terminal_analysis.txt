@@ -1,0 +1,11 @@
+TP53 N-TERMINAL AND C-TERMINAL ANALYSIS
+=======================================
+
+N-terminal (first 20 aa):
+MEEPQSDPSVEPPLSQETFPS
+
+C-terminal (last 20 aa):
+GQSTSRHKKLMFKTEGPDSD
+
+N-terminal residue: M
+C-terminal residue: D
