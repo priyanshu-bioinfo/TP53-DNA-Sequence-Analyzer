@@ -1,31 +1,44 @@
-commands_and_results/Linux/all_commands_backup.txt
-commands_and_results/Linux/all_commands.txt
-commands_and_results/Linux/file_inventory.txt
-commands_and_results/Linux/linux_commands_history.txt
-commands_and_results/Linux/results/TP53_amino_acid_composition.txt
-commands_and_results/Linux/results/TP53_blast_clean.txt
-commands_and_results/Linux/results/TP53_blast_interpretation.txt
-commands_and_results/Linux/results/TP53_blast_summary.txt
-commands_and_results/Linux/results/TP53_blast_swissprot.txt
-commands_and_results/Linux/results/TP53_blast.txt
-commands_and_results/Linux/results/TP53_conservation.txt
-commands_and_results/Linux/results/TP53_final_summary.txt
-commands_and_results/Linux/results/TP53_interactive_conservation.html
-commands_and_results/Linux/results/TP53_motif_analysis.txt
-commands_and_results/Linux/results/TP53_mutation_hotspots.txt
-commands_and_results/Linux/results/TP53_nglycosylation.txt
-commands_and_results/Linux/results/TP53_nucleotide_composition.txt
-commands_and_results/Linux/results/TP53_pepstats.txt
-commands_and_results/Linux/results/TP53_phosphorylation.txt
-commands_and_results/Linux/results/TP53_physicochemical.txt
-commands_and_results/Linux/results/TP53_reference_validation.txt
-commands_and_results/Linux/results/TP53_residue_positions.txt
-commands_and_results/Linux/results/TP53_terminal_analysis.txt
-commands_and_results/Linux/sequences/Chimpanzee_TP53.fa
-commands_and_results/Linux/sequences/Human_TP53.fa
-commands_and_results/Linux/sequences/Marmoset_TP53.fa
-commands_and_results/Linux/sequences/Rhesus_macaque_TP53.fa
-commands_and_results/Linux/sequences/TP53_CDS.fa
-commands_and_results/Linux/sequences/TP53.fa
-commands_and_results/Linux/sequences/TP53_protein.fa
-commands_and_results/Linux/sequences/TP53_uniprot_reference.fa
+# Repository data inventory
+# The original project inventory is preserved in linux_commands_history.txt.
+# Clean analysis entry point:
+Code/Linux/tp53_analysis.sh
+
+Input sequences:
+Data/TP53.fa
+Data/TP53_CDS.fa
+Data/TP53_protein.fa
+Data/TP53_uniprot_reference.fa
+Data/Human_TP53.fa
+Data/Chimpanzee_TP53.fa
+Data/Marmoset_TP53.fa
+Data/Rhesus_macaque_TP53.fa
+
+Python:
+Code/Python/tp53_analysis.py
+Results/Python/TP53_results.txt
+Plots/Python/TP53_nucleotide_composition.png
+Plots/Python/TP53_gc_at_content.png
+
+R:
+Code/R/DNA_analysis.R
+Results/R/TP53_R_results.txt
+Plots/R/p1.png
+Plots/R/p2.png
+Plots/R/p4.png
+Plots/R/p5.png
+Plots/R/p6.png
+Plots/R/final_plot.png
+
+Linux recorded outputs:
+Results/Linux/
+Plots/Linux/
+
+Linux reproducibility outputs (regenerated without overwriting recorded results):
+Results/Linux/Reproduced/TP53_nucleotide_composition.txt
+Results/Linux/Reproduced/TP53_physicochemical.txt
+Results/Linux/Reproduced/TP53_reference_validation.txt
+Results/Linux/Reproduced/run_manifest.txt
+
+Documentation:
+Documentation/TP53_Final_Project_Documentation_NEW.docx
+Documentation/REPRODUCIBILITY.md

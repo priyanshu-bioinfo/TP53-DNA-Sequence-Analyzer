@@ -1,0 +1,10 @@
+TP53 NUCLEOTIDE COMPOSITION
+===========================
+
+A: 532 (21.18%)
+C: 720 (28.66%)
+G: 621 (24.72%)
+T: 639 (25.44%)
+Total: 2512 nt
+GC content: 53.38%
+AT content: 46.62%

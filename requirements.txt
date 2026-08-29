@@ -1,0 +1,2 @@
+biopython>=1.85
+matplotlib>=3.8

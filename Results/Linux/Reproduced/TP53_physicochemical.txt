@@ -1,0 +1,9 @@
+TP53 PHYSICOCHEMICAL PROPERTIES
+================================
+
+Sequence length: 393 aa
+Molecular weight: 43652.71 Da
+Theoretical pI (Biopython): 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562

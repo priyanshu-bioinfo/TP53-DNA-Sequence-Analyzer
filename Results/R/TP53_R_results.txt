@@ -1,14 +1,68 @@
-TP53 DNA SEQUENCE ANALYSIS RESULTS
-=================================
+TP53 DNA SEQUENCE ANALYSIS — R/RSTUDIO
+======================================
 
+INPUT / REFERENCE VALIDATION
+----------------------------
+Transcript ID: NM_000546.6
+Transcript length: 2512 nt
 CDS length: 1182 nt
-Protein length: 393 aa
-GC content: 56.85279 %
-AT content: 43.14721 %
-Molecular weight: 43653.18 Da
-Theoretical pI: 6.781679 
+CDS matches transcript positions 143-1324: TRUE
+Translated CDS length: 393 aa
+Translated CDS matches UniProt P04637: TRUE
+Protein file matches UniProt P04637: TRUE
 
-Longest ORFs:
-Frame 1: 1182 nt / 393 aa
-Frame 2: 204 nt / 67 aa
-Frame 3: 18 nt / 5 aa
+NUCLEOTIDE COMPOSITION
+----------------------
+A: 276 (23.35%)
+C: 366 (30.96%)
+G: 306 (25.89%)
+T: 234 (19.80%)
+CDS GC content: 56.85279%
+CDS AT content: 43.14721%
+
+FULL-TRANSCRIPT ORF ANALYSIS
+----------------------------
+Frame +1: 2023-2499 nt; 477 nt / 158 aa; stop = TAA
+Frame +2: 143-1324 nt; 1182 nt / 393 aa; stop = TGA
+Frame +3: 678-881 nt; 204 nt / 67 aa; stop = TGA
+Longest ORF matches annotated TP53 CDS coordinates: TRUE
+
+ANNOTATED CDS READING-FRAME ANALYSIS
+------------------------------------
+Frame 1: 1182 nt / 393 aa; stop = TGA
+Frame 2: 204 nt / 67 aa; stop = TGA
+Frame 3: 18 nt / 5 aa; stop = TGA
+
+PROTEIN PROPERTIES — PEPTIDES PACKAGE
+--------------------------------------
+Protein length: 393 aa
+Molecular weight: 43653.18 Da
+Theoretical pI: 6.781679
+
+GC CONTENT BY CODON POSITION
+----------------------------
+Position 1: 59.29%
+Position 2: 48.85%
+Position 3: 62.60%
+
+TOP 10 SENSE CODONS
+-------------------
+GAG: 19
+CCT: 15
+CCC: 15
+CTG: 15
+TCC: 13
+AAG: 13
+ATG: 12
+CAG: 12
+GCC: 12
+GAT: 11
+
+INTERPRETATION NOTES
+--------------------
+ORFs are frame-aware: the first in-frame stop codon after an ATG terminates each candidate ORF.
+The full transcript contains the annotated TP53 CDS at positions 143-1324 in forward frame +2.
+The three CDS-frame values describe reading-frame analysis within the already annotated CDS.
+A motif or sequence-pattern match is not experimental evidence of a biological modification.
+
+END OF R ANALYSIS

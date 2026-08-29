@@ -1,23 +1,72 @@
-TP53 DNA Sequence Analysis
+TP53 DNA SEQUENCE ANALYSIS — PYTHON
+========================================
 
-Accession: NM_000546.6
-Sequence length: 2512 bp
+Transcript: NM_000546.6
+Transcript length: 2512 nt
 
-Nucleotide counts:
-A: 532
-T: 639
-G: 621
-C: 720
-
-Nucleotide percentages:
-A: 21.18%
-T: 25.44%
-G: 24.72%
-C: 28.66%
-
+FULL TRANSCRIPT NUCLEOTIDE COMPOSITION
+----------------------------------------
+A: 532 (21.18%)
+T: 639 (25.44%)
+G: 621 (24.72%)
+C: 720 (28.66%)
 GC content: 53.38%
 AT content: 46.62%
 GC/AT ratio: 1.1452
-
 GC skew: -0.0738
 AT skew: -0.0914
+
+CDS / PROTEIN VALIDATION
+------------------------
+CDS length: 1182 nt
+CDS matches transcript positions 143-1324: True
+Translated CDS length: 393 aa
+Protein file length: 393 aa
+UniProt reference length: 393 aa
+Translated CDS matches UniProt P04637: True
+Protein file matches UniProt P04637: True
+
+FULL-TRANSCRIPT ORF ANALYSIS
+----------------------------
+Frame 1: 2023-2499 nt; 477 nt / 158 aa; stop=TAA
+Frame 2: 143-1324 nt; 1182 nt / 393 aa; stop=TGA
+Frame 3: 678-881 nt; 204 nt / 67 aa; stop=TGA
+Longest ORF overall: Frame 2: 143-1324 nt; 1182 nt / 393 aa; stop=TGA
+
+CANONICAL TP53 PROTEIN PROPERTIES
+----------------------------------
+Protein length: 393 aa
+Molecular weight (Biopython): 43652.71 Da
+Theoretical pI (Biopython): 6.33
+Instability index: 73.59
+Aromaticity: 0.0611
+GRAVY: -0.7562
+
+AMINO ACID COMPOSITION
+----------------------
+A: 24 (6.11%)
+C: 10 (2.54%)
+D: 20 (5.09%)
+E: 30 (7.63%)
+F: 11 (2.80%)
+G: 23 (5.85%)
+H: 12 (3.05%)
+I: 8 (2.04%)
+K: 20 (5.09%)
+L: 32 (8.14%)
+M: 12 (3.05%)
+N: 14 (3.56%)
+P: 45 (11.45%)
+Q: 15 (3.82%)
+R: 26 (6.62%)
+S: 38 (9.67%)
+T: 22 (5.60%)
+V: 18 (4.58%)
+W: 4 (1.02%)
+Y: 9 (2.29%)
+
+NOTES
+-----
+ORFs are detected only when the stop codon is in the same reading frame as the ATG.
+Protein pI and physicochemical properties are calculated with Biopython ProteinAnalysis.
+A motif match is a sequence-pattern observation and is not evidence of biological modification.

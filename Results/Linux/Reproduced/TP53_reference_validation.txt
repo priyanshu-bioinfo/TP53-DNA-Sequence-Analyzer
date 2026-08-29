@@ -1,0 +1,26 @@
+TP53 REFERENCE VALIDATION
+=========================
+
+PROTEIN vs UniProt P04637
+------------------------
+Our protein length: 393 aa
+Reference length: 393 aa
+Exact sequence match: True
+Differences: 0
+
+CDS vs NCBI NM_000546.6
+----------------------
+Our CDS length: 1182 nt
+Transcript-annotated CDS coordinates: 143-1324
+Exact sequence match: True
+Differences: 0
+
+CDS TRANSLATION vs UniProt P04637
+----------------------------------
+Translated protein length: 393 aa
+Exact sequence match: True
+
+NOTE
+----
+The BLASTP results in Results/Linux/ are recorded external results.
+They are not overwritten by this local reproducibility workflow.

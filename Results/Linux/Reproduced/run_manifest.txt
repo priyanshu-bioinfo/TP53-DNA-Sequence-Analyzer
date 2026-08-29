@@ -1,0 +1,22 @@
+TP53 LINUX REPRODUCIBILITY MANIFEST
+====================================
+Project root: /mnt/data/tp53_work/clean
+Python: 3.13.5
+Biopython: 1.86
+Platform: Linux-6.18.35-x86_64-with-glibc2.41
+
+INPUT CHECKSUMS (SHA256)
+-------------------------
+b29a603f664c8853c80d7550de1db1cf859f9d987a78c0fd81029543ac3fb318  Data/TP53.fa
+edbc512657befce5951ca4553f43802342890ca1712604d8980b4b61b542c090  Data/TP53_CDS.fa
+fd531a629a7ce9d2f36b2c26f5a122b594bcadd38544e128221fe1914e873666  Data/TP53_protein.fa
+59aace7211b64e5918ef6547fc48d6419a134fa91f158415d598d3416882f063  Data/TP53_uniprot_reference.fa
+
+REPRODUCED OUTPUT CHECKSUMS (SHA256)
+------------------------------------
+0bec1d1e17dd6aee1a2e7972353de8c47937a77ee55b126dbb005bed3236b00d  Results/Linux/Reproduced/TP53_nucleotide_composition.txt
+627b8a90140958c2af2ff38bc4a4e8b1ebcde3feb3b7899067a6a8d63a235cae  Results/Linux/Reproduced/TP53_physicochemical.txt
+bcce2dbe948b147d25b6fc3854129fe83ee773709490317e0e7aef6179c1e93b  Results/Linux/Reproduced/TP53_reference_validation.txt
+
+External database results (BLASTP) are intentionally not regenerated here.
+The historical BLAST outputs remain in Results/Linux/ and are treated as recorded evidence.
